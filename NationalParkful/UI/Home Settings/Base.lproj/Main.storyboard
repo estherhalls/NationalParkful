@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7bn-eC-XNU">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="g3h-6u-GaF">
+            <objects>
+                <navigationController id="LHc-AZ-WiW" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="house.circle" catalog="system" id="2px-DC-ZXS"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ypl-LA-vrO">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Roz-GJ-TLf" kind="relationship" relationship="rootViewController" id="CMq-GE-JVN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Txm-Bg-PSm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1482" y="-732"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="TCg-el-MLx">
+            <objects>
+                <tabBarController id="7bn-eC-XNU" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sGx-aE-od3">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="LHc-AZ-WiW" kind="relationship" relationship="viewControllers" id="nsc-2O-WPc"/>
+                        <segue destination="ATf-QZ-jne" kind="relationship" relationship="viewControllers" id="Yt8-ea-xEz"/>
+                        <segue destination="QPt-FO-X4e" kind="relationship" relationship="viewControllers" id="5Hl-2P-R3p"/>
+                        <segue destination="GFX-oM-3uS" kind="relationship" relationship="viewControllers" id="xgy-ff-JNY"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VcK-R9-PPw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2735" y="-1595"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="iah-E0-gyN">
+            <objects>
+                <navigationController id="ATf-QZ-jne" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="mountain.2.circle" catalog="system" id="Olq-la-Njl"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Oi6-ap-OUC">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="cYe-cf-z2y" kind="relationship" relationship="rootViewController" id="y14-BI-C5W"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9sT-Fx-yW0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2317" y="-732"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="9gs-hQ-Vw7">
+            <objects>
+                <navigationController id="QPt-FO-X4e" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="airplane.circle" catalog="system" id="ott-gD-ycf"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Pcn-9k-w8O">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="h1p-E7-yEF" kind="relationship" relationship="rootViewController" id="Qr8-BV-Apr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cYe-Fd-qEi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3160" y="-732"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="jfY-yB-Qrm">
+            <objects>
+                <navigationController id="GFX-oM-3uS" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="globe.americas.fill" catalog="system" id="HYS-eK-vW0"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dYK-Zk-mDi">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Ohx-QD-l7q" kind="relationship" relationship="rootViewController" id="gJB-DL-5Hd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nuo-w9-U7M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4015" y="-732"/>
+        </scene>
+        <!--JournalDetail-->
+        <scene sceneID="Gml-Ts-7Cd">
+            <objects>
+                <viewControllerPlaceholder storyboardName="JournalDetail" id="RjJ-sX-HcK" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="7zs-23-bgq"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QhW-Bf-lOQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3381" y="-108"/>
+        </scene>
+        <!--TripParkList-->
+        <scene sceneID="g9f-jZ-Eau">
+            <objects>
+                <viewControllerPlaceholder storyboardName="TripParkList" id="Lh0-UO-GeD" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="f5t-89-ZgH"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ybZ-QU-Owx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3380" y="-195"/>
+        </scene>
+        <!--NewTripDetail-->
+        <scene sceneID="w7c-nl-5MX">
+            <objects>
+                <viewControllerPlaceholder storyboardName="NewTripDetail" id="zcf-n1-1Gn" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="HbK-3r-Ob5"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iJO-5p-qgW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2947" y="-195"/>
+        </scene>
+        <!--TripsList-->
+        <scene sceneID="61S-NI-E4b">
+            <objects>
+                <viewControllerPlaceholder storyboardName="TripsList" id="h1p-E7-yEF" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="ioP-Hr-xdH"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="au7-sc-k6V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3160" y="-291"/>
+        </scene>
+        <!--ExploreMap-->
+        <scene sceneID="IEB-RC-urE">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ExploreMap" id="Ohx-QD-l7q" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="wWr-Ps-981"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6GD-YV-Hqi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4014" y="-291"/>
+        </scene>
+        <!--ParkDetail-->
+        <scene sceneID="sEJ-Fb-I20">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ParkDetail" id="SRe-tu-N3g" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="CoN-By-8cD"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jgK-tb-3iy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2317" y="-195"/>
+        </scene>
+        <!--ParkList-->
+        <scene sceneID="nnb-mL-bM8">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ParkList" id="cYe-cf-z2y" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="eSC-tU-2JQ"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NaV-Eh-jsI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2316" y="-291"/>
+        </scene>
+        <!--UserSettings-->
+        <scene sceneID="p3U-AU-hWc">
+            <objects>
+                <viewControllerPlaceholder storyboardName="UserSettings" id="Icw-f1-m2T" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="EoO-vr-OGa"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lc6-Jj-Z5v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1481" y="-195"/>
+        </scene>
+        <!--HomePage-->
+        <scene sceneID="SWy-jM-oy8">
+            <objects>
+                <viewControllerPlaceholder storyboardName="HomePage" id="Roz-GJ-TLf" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="NqN-Tv-txh"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fJq-N4-cZB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1481" y="-291"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="airplane.circle" catalog="system" width="128" height="123"/>
+        <image name="globe.americas.fill" catalog="system" width="128" height="123"/>
+        <image name="house.circle" catalog="system" width="128" height="123"/>
+        <image name="mountain.2.circle" catalog="system" width="128" height="123"/>
+    </resources>
+</document>
