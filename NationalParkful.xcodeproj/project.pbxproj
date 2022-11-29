@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB44383929369F6800CF32DB /* JournalDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB44383729369F6800CF32DB /* JournalDetail.storyboard */; };
+		EB44383B29369FB700CF32DB /* TripParkList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB44383A29369FB700CF32DB /* TripParkList.storyboard */; };
+		EB44383E29369FE300CF32DB /* NewTripDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB44383C29369FE300CF32DB /* NewTripDetail.storyboard */; };
+		EB4438402936A00700CF32DB /* TripsList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB44383F2936A00700CF32DB /* TripsList.storyboard */; };
 		EBAEDFAC2925D28D00E9B460 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAEDFAB2925D28D00E9B460 /* AppDelegate.swift */; };
 		EBAEDFAE2925D28D00E9B460 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAEDFAD2925D28D00E9B460 /* SceneDelegate.swift */; };
 		EBAEDFB32925D28D00E9B460 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBAEDFB12925D28D00E9B460 /* Main.storyboard */; };
@@ -14,6 +18,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EB44383829369F6800CF32DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "NationalParkful/UI/User Settings/Base.lproj/JournalDetail.storyboard"; sourceTree = "<group>"; };
+		EB44383A29369FB700CF32DB /* TripParkList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TripParkList.storyboard; sourceTree = "<group>"; };
+		EB44383D29369FE300CF32DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "NationalParkful/UI/User Settings/Base.lproj/NewTripDetail.storyboard"; sourceTree = "<group>"; };
+		EB44383F2936A00700CF32DB /* TripsList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TripsList.storyboard; sourceTree = "<group>"; };
 		EBAEDFA82925D28D00E9B460 /* NationalParkful.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NationalParkful.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBAEDFAB2925D28D00E9B460 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBAEDFAD2925D28D00E9B460 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +85,10 @@
 		EBAEDF9F2925D28D00E9B460 = {
 			isa = PBXGroup;
 			children = (
+				EB44383F2936A00700CF32DB /* TripsList.storyboard */,
+				EB44383C29369FE300CF32DB /* NewTripDetail.storyboard */,
+				EB44383A29369FB700CF32DB /* TripParkList.storyboard */,
+				EB44383729369F6800CF32DB /* JournalDetail.storyboard */,
 				EBAEDFAA2925D28D00E9B460 /* NationalParkful */,
 				EBAEDFA92925D28D00E9B460 /* Products */,
 			);
@@ -159,8 +171,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB44383E29369FE300CF32DB /* NewTripDetail.storyboard in Resources */,
+				EB4438402936A00700CF32DB /* TripsList.storyboard in Resources */,
 				EBAEDFB52925D28F00E9B460 /* Assets.xcassets in Resources */,
 				EBAEDFB32925D28D00E9B460 /* Main.storyboard in Resources */,
+				EB44383929369F6800CF32DB /* JournalDetail.storyboard in Resources */,
+				EB44383B29369FB700CF32DB /* TripParkList.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,6 +195,22 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		EB44383729369F6800CF32DB /* JournalDetail.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB44383829369F6800CF32DB /* Base */,
+			);
+			name = JournalDetail.storyboard;
+			sourceTree = "<group>";
+		};
+		EB44383C29369FE300CF32DB /* NewTripDetail.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB44383D29369FE300CF32DB /* Base */,
+			);
+			name = NewTripDetail.storyboard;
+			sourceTree = "<group>";
+		};
 		EBAEDFB12925D28D00E9B460 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
