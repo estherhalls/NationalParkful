@@ -7,22 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB44383929369F6800CF32DB /* JournalDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB44383729369F6800CF32DB /* JournalDetail.storyboard */; };
+		EB44383B29369FB700CF32DB /* TripParkList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB44383A29369FB700CF32DB /* TripParkList.storyboard */; };
+		EB44383E29369FE300CF32DB /* NewTripDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB44383C29369FE300CF32DB /* NewTripDetail.storyboard */; };
+		EB4438402936A00700CF32DB /* TripsList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB44383F2936A00700CF32DB /* TripsList.storyboard */; };
+		EB4438472936A29A00CF32DB /* ExploreMap.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB4438452936A29A00CF32DB /* ExploreMap.storyboard */; };
+		EB4438492936A2FB00CF32DB /* ParkDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB4438482936A2FB00CF32DB /* ParkDetail.storyboard */; };
+		EB44384C2936A32200CF32DB /* ParkList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB44384A2936A32200CF32DB /* ParkList.storyboard */; };
+		EB44384E2936A34600CF32DB /* UserSettings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB44384D2936A34600CF32DB /* UserSettings.storyboard */; };
+		EB4438512936A36A00CF32DB /* HomePage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB44384F2936A36A00CF32DB /* HomePage.storyboard */; };
 		EBAEDFAC2925D28D00E9B460 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAEDFAB2925D28D00E9B460 /* AppDelegate.swift */; };
 		EBAEDFAE2925D28D00E9B460 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAEDFAD2925D28D00E9B460 /* SceneDelegate.swift */; };
-		EBAEDFB02925D28D00E9B460 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAEDFAF2925D28D00E9B460 /* ViewController.swift */; };
 		EBAEDFB32925D28D00E9B460 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBAEDFB12925D28D00E9B460 /* Main.storyboard */; };
 		EBAEDFB52925D28F00E9B460 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBAEDFB42925D28F00E9B460 /* Assets.xcassets */; };
-		EBAEDFB82925D28F00E9B460 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBAEDFB62925D28F00E9B460 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EB44383829369F6800CF32DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "NationalParkful/UI/User Settings/Base.lproj/JournalDetail.storyboard"; sourceTree = "<group>"; };
+		EB44383A29369FB700CF32DB /* TripParkList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TripParkList.storyboard; sourceTree = "<group>"; };
+		EB44383D29369FE300CF32DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "NationalParkful/UI/User Settings/Base.lproj/NewTripDetail.storyboard"; sourceTree = "<group>"; };
+		EB44383F2936A00700CF32DB /* TripsList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TripsList.storyboard; sourceTree = "<group>"; };
+		EB4438462936A29A00CF32DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "NationalParkful/UI/Home Settings/Base.lproj/ExploreMap.storyboard"; sourceTree = "<group>"; };
+		EB4438482936A2FB00CF32DB /* ParkDetail.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ParkDetail.storyboard; sourceTree = "<group>"; };
+		EB44384B2936A32200CF32DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "NationalParkful/UI/Home Settings/Base.lproj/ParkList.storyboard"; sourceTree = "<group>"; };
+		EB44384D2936A34600CF32DB /* UserSettings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UserSettings.storyboard; sourceTree = "<group>"; };
+		EB4438502936A36A00CF32DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "NationalParkful/UI/Home Settings/Base.lproj/HomePage.storyboard"; sourceTree = "<group>"; };
 		EBAEDFA82925D28D00E9B460 /* NationalParkful.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NationalParkful.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBAEDFAB2925D28D00E9B460 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBAEDFAD2925D28D00E9B460 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EBAEDFAF2925D28D00E9B460 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EBAEDFB22925D28D00E9B460 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EBAEDFB42925D28F00E9B460 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		EBAEDFB72925D28F00E9B460 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EBAEDFB92925D28F00E9B460 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -37,6 +51,80 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EB4438412936A10500CF32DB /* TripData-UserRecorded */ = {
+			isa = PBXGroup;
+			children = (
+				EB44383F2936A00700CF32DB /* TripsList.storyboard */,
+				EB44383C29369FE300CF32DB /* NewTripDetail.storyboard */,
+				EB44383A29369FB700CF32DB /* TripParkList.storyboard */,
+				EB44383729369F6800CF32DB /* JournalDetail.storyboard */,
+			);
+			path = "TripData-UserRecorded";
+			sourceTree = "<group>";
+		};
+		EB4438432936A20E00CF32DB /* ParkData-ReadOnly */ = {
+			isa = PBXGroup;
+			children = (
+				EB44384A2936A32200CF32DB /* ParkList.storyboard */,
+				EB4438482936A2FB00CF32DB /* ParkDetail.storyboard */,
+			);
+			path = "ParkData-ReadOnly";
+			sourceTree = "<group>";
+		};
+		EB4438442936A27300CF32DB /* Explore Map */ = {
+			isa = PBXGroup;
+			children = (
+				EB4438452936A29A00CF32DB /* ExploreMap.storyboard */,
+			);
+			path = "Explore Map";
+			sourceTree = "<group>";
+		};
+		EB8E4EA32925D5310076EF2E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EBAEDFAB2925D28D00E9B460 /* AppDelegate.swift */,
+				EBAEDFAD2925D28D00E9B460 /* SceneDelegate.swift */,
+				EBAEDFB42925D28F00E9B460 /* Assets.xcassets */,
+				EBAEDFB92925D28F00E9B460 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EB8E4EA42926E3860076EF2E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EB8E4EA52926E3910076EF2E /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		EB8E4EA62926E3B20076EF2E /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				EB4438442936A27300CF32DB /* Explore Map */,
+				EB4438432936A20E00CF32DB /* ParkData-ReadOnly */,
+				EB4438412936A10500CF32DB /* TripData-UserRecorded */,
+				EB8E4EA72926E9550076EF2E /* Home Settings */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		EB8E4EA72926E9550076EF2E /* Home Settings */ = {
+			isa = PBXGroup;
+			children = (
+				EB44384F2936A36A00CF32DB /* HomePage.storyboard */,
+				EB44384D2936A34600CF32DB /* UserSettings.storyboard */,
+				EBAEDFB12925D28D00E9B460 /* Main.storyboard */,
+			);
+			path = "Home Settings";
+			sourceTree = "<group>";
+		};
 		EBAEDF9F2925D28D00E9B460 = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +144,10 @@
 		EBAEDFAA2925D28D00E9B460 /* NationalParkful */ = {
 			isa = PBXGroup;
 			children = (
-				EBAEDFAB2925D28D00E9B460 /* AppDelegate.swift */,
-				EBAEDFAD2925D28D00E9B460 /* SceneDelegate.swift */,
-				EBAEDFAF2925D28D00E9B460 /* ViewController.swift */,
-				EBAEDFB12925D28D00E9B460 /* Main.storyboard */,
-				EBAEDFB42925D28F00E9B460 /* Assets.xcassets */,
-				EBAEDFB62925D28F00E9B460 /* LaunchScreen.storyboard */,
-				EBAEDFB92925D28F00E9B460 /* Info.plist */,
+				EB8E4EA62926E3B20076EF2E /* UI */,
+				EB8E4EA52926E3910076EF2E /* Network */,
+				EB8E4EA42926E3860076EF2E /* Models */,
+				EB8E4EA32925D5310076EF2E /* Resources */,
 			);
 			path = NationalParkful;
 			sourceTree = "<group>";
@@ -125,9 +210,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBAEDFB82925D28F00E9B460 /* LaunchScreen.storyboard in Resources */,
+				EB44384E2936A34600CF32DB /* UserSettings.storyboard in Resources */,
+				EB44383E29369FE300CF32DB /* NewTripDetail.storyboard in Resources */,
+				EB4438402936A00700CF32DB /* TripsList.storyboard in Resources */,
+				EB4438512936A36A00CF32DB /* HomePage.storyboard in Resources */,
+				EB44384C2936A32200CF32DB /* ParkList.storyboard in Resources */,
 				EBAEDFB52925D28F00E9B460 /* Assets.xcassets in Resources */,
+				EB4438472936A29A00CF32DB /* ExploreMap.storyboard in Resources */,
 				EBAEDFB32925D28D00E9B460 /* Main.storyboard in Resources */,
+				EB4438492936A2FB00CF32DB /* ParkDetail.storyboard in Resources */,
+				EB44383929369F6800CF32DB /* JournalDetail.storyboard in Resources */,
+				EB44383B29369FB700CF32DB /* TripParkList.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +231,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBAEDFB02925D28D00E9B460 /* ViewController.swift in Sources */,
 				EBAEDFAC2925D28D00E9B460 /* AppDelegate.swift in Sources */,
 				EBAEDFAE2925D28D00E9B460 /* SceneDelegate.swift in Sources */,
 			);
@@ -147,20 +239,52 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		EB44383729369F6800CF32DB /* JournalDetail.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB44383829369F6800CF32DB /* Base */,
+			);
+			name = JournalDetail.storyboard;
+			sourceTree = "<group>";
+		};
+		EB44383C29369FE300CF32DB /* NewTripDetail.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB44383D29369FE300CF32DB /* Base */,
+			);
+			name = NewTripDetail.storyboard;
+			sourceTree = "<group>";
+		};
+		EB4438452936A29A00CF32DB /* ExploreMap.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB4438462936A29A00CF32DB /* Base */,
+			);
+			name = ExploreMap.storyboard;
+			sourceTree = "<group>";
+		};
+		EB44384A2936A32200CF32DB /* ParkList.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB44384B2936A32200CF32DB /* Base */,
+			);
+			name = ParkList.storyboard;
+			sourceTree = "<group>";
+		};
+		EB44384F2936A36A00CF32DB /* HomePage.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB4438502936A36A00CF32DB /* Base */,
+			);
+			name = HomePage.storyboard;
+			sourceTree = "<group>";
+		};
 		EBAEDFB12925D28D00E9B460 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				EBAEDFB22925D28D00E9B460 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		EBAEDFB62925D28F00E9B460 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EBAEDFB72925D28F00E9B460 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -288,7 +412,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = NationalParkful/Info.plist;
+				INFOPLIST_FILE = NationalParkful/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -315,7 +439,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = NationalParkful/Info.plist;
+				INFOPLIST_FILE = NationalParkful/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
