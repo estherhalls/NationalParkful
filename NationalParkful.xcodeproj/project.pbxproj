@@ -40,6 +40,8 @@
 		EBAEDFAE2925D28D00E9B460 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAEDFAD2925D28D00E9B460 /* SceneDelegate.swift */; };
 		EBAEDFB32925D28D00E9B460 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBAEDFB12925D28D00E9B460 /* Main.storyboard */; };
 		EBAEDFB52925D28F00E9B460 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBAEDFB42925D28F00E9B460 /* Assets.xcassets */; };
+		EBE9D443293926AA004A8EDE /* npsAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE9D442293926AA004A8EDE /* npsAPIService.swift */; };
+		EBE9D447293929B0004A8EDE /* npsEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE9D446293929B0004A8EDE /* npsEndpoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +75,8 @@
 		EBAEDFB22925D28D00E9B460 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EBAEDFB42925D28F00E9B460 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EBAEDFB92925D28F00E9B460 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBE9D442293926AA004A8EDE /* npsAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = npsAPIService.swift; sourceTree = "<group>"; };
+		EBE9D446293929B0004A8EDE /* npsEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = npsEndpoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +185,8 @@
 			isa = PBXGroup;
 			children = (
 				EB08EF9029389A760081D122 /* FirebaseService.swift */,
+				EBE9D442293926AA004A8EDE /* npsAPIService.swift */,
+				EBE9D446293929B0004A8EDE /* npsEndpoint.swift */,
 				EB08EF9229389C710081D122 /* NetworkError.swift */,
 			);
 			path = Network;
@@ -333,6 +339,7 @@
 				EB08EF9529389CCF0081D122 /* ParkData.swift in Sources */,
 				EB08EF7E293890390081D122 /* JournalDetailViewModel.swift in Sources */,
 				EB08EF7C293890110081D122 /* JournalDetailViewController.swift in Sources */,
+				EBE9D447293929B0004A8EDE /* npsEndpoint.swift in Sources */,
 				EB08EF80293891720081D122 /* TripParkViewController.swift in Sources */,
 				EB08EF9129389A760081D122 /* FirebaseService.swift in Sources */,
 				EB08EF7A29388FA10081D122 /* AllTripsListTableViewController.swift in Sources */,
@@ -345,6 +352,7 @@
 				EB08EF7629388F250081D122 /* NewTripViewController.swift in Sources */,
 				EBAEDFAE2925D28D00E9B460 /* SceneDelegate.swift in Sources */,
 				EB08EF7829388F420081D122 /* ParkListTableViewController.swift in Sources */,
+				EBE9D443293926AA004A8EDE /* npsAPIService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

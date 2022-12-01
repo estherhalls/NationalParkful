@@ -13,7 +13,7 @@ enum NetworkError: Error, LocalizedError {
     case requestError(Error)
     case badURL
     case couldNotUnwrap
-    case errorDecoding(Error)
+    case errorDecoding
   
     var localizedDescription: String {
         switch self {
