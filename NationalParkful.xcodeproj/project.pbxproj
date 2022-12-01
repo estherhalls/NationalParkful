@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB08EF6E29388E270081D122 /* ParkListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB08EF6D29388E270081D122 /* ParkListViewModel.swift */; };
+		EB08EF7029388E410081D122 /* ParkDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB08EF6F29388E410081D122 /* ParkDetailViewModel.swift */; };
+		EB08EF7229388E620081D122 /* ParkDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB08EF7129388E620081D122 /* ParkDetailViewController.swift */; };
+		EB08EF7429388EFC0081D122 /* NewTripViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB08EF7329388EFC0081D122 /* NewTripViewModel.swift */; };
+		EB08EF7629388F250081D122 /* NewTripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB08EF7529388F250081D122 /* NewTripViewController.swift */; };
+		EB08EF7829388F420081D122 /* ParkListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB08EF7729388F420081D122 /* ParkListTableViewController.swift */; };
+		EB08EF7A29388FA10081D122 /* AllTripsListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB08EF7929388FA10081D122 /* AllTripsListTableViewController.swift */; };
+		EB08EF7C293890110081D122 /* JournalDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB08EF7B293890110081D122 /* JournalDetailViewController.swift */; };
+		EB08EF7E293890390081D122 /* JournalDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB08EF7D293890390081D122 /* JournalDetailViewModel.swift */; };
+		EB08EF80293891720081D122 /* TripParkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB08EF7F293891720081D122 /* TripParkViewController.swift */; };
+		EB08EF82293891830081D122 /* TripParkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB08EF81293891830081D122 /* TripParkViewModel.swift */; };
 		EB44383929369F6800CF32DB /* JournalDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB44383729369F6800CF32DB /* JournalDetail.storyboard */; };
 		EB44383B29369FB700CF32DB /* TripParkList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB44383A29369FB700CF32DB /* TripParkList.storyboard */; };
 		EB44383E29369FE300CF32DB /* NewTripDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB44383C29369FE300CF32DB /* NewTripDetail.storyboard */; };
@@ -23,6 +34,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EB08EF6D29388E270081D122 /* ParkListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkListViewModel.swift; sourceTree = "<group>"; };
+		EB08EF6F29388E410081D122 /* ParkDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkDetailViewModel.swift; sourceTree = "<group>"; };
+		EB08EF7129388E620081D122 /* ParkDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkDetailViewController.swift; sourceTree = "<group>"; };
+		EB08EF7329388EFC0081D122 /* NewTripViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTripViewModel.swift; sourceTree = "<group>"; };
+		EB08EF7529388F250081D122 /* NewTripViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTripViewController.swift; sourceTree = "<group>"; };
+		EB08EF7729388F420081D122 /* ParkListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkListTableViewController.swift; sourceTree = "<group>"; };
+		EB08EF7929388FA10081D122 /* AllTripsListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllTripsListTableViewController.swift; sourceTree = "<group>"; };
+		EB08EF7B293890110081D122 /* JournalDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalDetailViewController.swift; sourceTree = "<group>"; };
+		EB08EF7D293890390081D122 /* JournalDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalDetailViewModel.swift; sourceTree = "<group>"; };
+		EB08EF7F293891720081D122 /* TripParkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripParkViewController.swift; sourceTree = "<group>"; };
+		EB08EF81293891830081D122 /* TripParkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripParkViewModel.swift; sourceTree = "<group>"; };
 		EB44383829369F6800CF32DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "NationalParkful/UI/User Settings/Base.lproj/JournalDetail.storyboard"; sourceTree = "<group>"; };
 		EB44383A29369FB700CF32DB /* TripParkList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TripParkList.storyboard; sourceTree = "<group>"; };
 		EB44383D29369FE300CF32DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "NationalParkful/UI/User Settings/Base.lproj/NewTripDetail.storyboard"; sourceTree = "<group>"; };
@@ -51,24 +73,63 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		EB4438412936A10500CF32DB /* TripData-UserRecorded */ = {
+		EB08EF6129388B890081D122 /* ParkDetail-ReadOnly */ = {
+			isa = PBXGroup;
+			children = (
+				EB4438482936A2FB00CF32DB /* ParkDetail.storyboard */,
+				EB08EF6F29388E410081D122 /* ParkDetailViewModel.swift */,
+				EB08EF7129388E620081D122 /* ParkDetailViewController.swift */,
+			);
+			path = "ParkDetail-ReadOnly";
+			sourceTree = "<group>";
+		};
+		EB08EF6229388BE40081D122 /* All Trips List */ = {
 			isa = PBXGroup;
 			children = (
 				EB44383F2936A00700CF32DB /* TripsList.storyboard */,
-				EB44383C29369FE300CF32DB /* NewTripDetail.storyboard */,
-				EB44383A29369FB700CF32DB /* TripParkList.storyboard */,
-				EB44383729369F6800CF32DB /* JournalDetail.storyboard */,
+				EB08EF7929388FA10081D122 /* AllTripsListTableViewController.swift */,
 			);
-			path = "TripData-UserRecorded";
+			path = "All Trips List";
 			sourceTree = "<group>";
 		};
-		EB4438432936A20E00CF32DB /* ParkData-ReadOnly */ = {
+		EB08EF6329388C180081D122 /* New Trip Detail */ = {
+			isa = PBXGroup;
+			children = (
+				EB44383C29369FE300CF32DB /* NewTripDetail.storyboard */,
+				EB08EF7329388EFC0081D122 /* NewTripViewModel.swift */,
+				EB08EF7529388F250081D122 /* NewTripViewController.swift */,
+			);
+			path = "New Trip Detail";
+			sourceTree = "<group>";
+		};
+		EB08EF6429388C560081D122 /* Journal Detail */ = {
+			isa = PBXGroup;
+			children = (
+				EB44383729369F6800CF32DB /* JournalDetail.storyboard */,
+				EB08EF7D293890390081D122 /* JournalDetailViewModel.swift */,
+				EB08EF7B293890110081D122 /* JournalDetailViewController.swift */,
+			);
+			path = "Journal Detail";
+			sourceTree = "<group>";
+		};
+		EB4438412936A10500CF32DB /* Trip Park List */ = {
+			isa = PBXGroup;
+			children = (
+				EB44383A29369FB700CF32DB /* TripParkList.storyboard */,
+				EB08EF81293891830081D122 /* TripParkViewModel.swift */,
+				EB08EF7F293891720081D122 /* TripParkViewController.swift */,
+			);
+			path = "Trip Park List";
+			sourceTree = "<group>";
+		};
+		EB4438432936A20E00CF32DB /* ParkList-ReadOnly */ = {
 			isa = PBXGroup;
 			children = (
 				EB44384A2936A32200CF32DB /* ParkList.storyboard */,
-				EB4438482936A2FB00CF32DB /* ParkDetail.storyboard */,
+				EB08EF6D29388E270081D122 /* ParkListViewModel.swift */,
+				EB08EF7729388F420081D122 /* ParkListTableViewController.swift */,
 			);
-			path = "ParkData-ReadOnly";
+			path = "ParkList-ReadOnly";
 			sourceTree = "<group>";
 		};
 		EB4438442936A27300CF32DB /* Explore Map */ = {
@@ -107,10 +168,14 @@
 		EB8E4EA62926E3B20076EF2E /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				EB4438442936A27300CF32DB /* Explore Map */,
-				EB4438432936A20E00CF32DB /* ParkData-ReadOnly */,
-				EB4438412936A10500CF32DB /* TripData-UserRecorded */,
 				EB8E4EA72926E9550076EF2E /* Home Settings */,
+				EB4438432936A20E00CF32DB /* ParkList-ReadOnly */,
+				EB08EF6129388B890081D122 /* ParkDetail-ReadOnly */,
+				EB08EF6229388BE40081D122 /* All Trips List */,
+				EB08EF6329388C180081D122 /* New Trip Detail */,
+				EB4438412936A10500CF32DB /* Trip Park List */,
+				EB08EF6429388C560081D122 /* Journal Detail */,
+				EB4438442936A27300CF32DB /* Explore Map */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -144,9 +209,9 @@
 		EBAEDFAA2925D28D00E9B460 /* NationalParkful */ = {
 			isa = PBXGroup;
 			children = (
-				EB8E4EA62926E3B20076EF2E /* UI */,
 				EB8E4EA52926E3910076EF2E /* Network */,
 				EB8E4EA42926E3860076EF2E /* Models */,
+				EB8E4EA62926E3B20076EF2E /* UI */,
 				EB8E4EA32925D5310076EF2E /* Resources */,
 			);
 			path = NationalParkful;
@@ -231,8 +296,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB08EF7029388E410081D122 /* ParkDetailViewModel.swift in Sources */,
+				EB08EF7E293890390081D122 /* JournalDetailViewModel.swift in Sources */,
+				EB08EF7C293890110081D122 /* JournalDetailViewController.swift in Sources */,
+				EB08EF80293891720081D122 /* TripParkViewController.swift in Sources */,
+				EB08EF7A29388FA10081D122 /* AllTripsListTableViewController.swift in Sources */,
+				EB08EF7229388E620081D122 /* ParkDetailViewController.swift in Sources */,
+				EB08EF6E29388E270081D122 /* ParkListViewModel.swift in Sources */,
 				EBAEDFAC2925D28D00E9B460 /* AppDelegate.swift in Sources */,
+				EB08EF7429388EFC0081D122 /* NewTripViewModel.swift in Sources */,
+				EB08EF82293891830081D122 /* TripParkViewModel.swift in Sources */,
+				EB08EF7629388F250081D122 /* NewTripViewController.swift in Sources */,
 				EBAEDFAE2925D28D00E9B460 /* SceneDelegate.swift in Sources */,
+				EB08EF7829388F420081D122 /* ParkListTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
