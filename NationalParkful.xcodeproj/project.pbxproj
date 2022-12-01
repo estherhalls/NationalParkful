@@ -25,6 +25,8 @@
 		EB08EF8D293896D90081D122 /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = EB08EF8C293896D90081D122 /* FirebaseFunctions */; };
 		EB08EF8F293896D90081D122 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = EB08EF8E293896D90081D122 /* FirebaseStorage */; };
 		EB08EF9129389A760081D122 /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB08EF9029389A760081D122 /* FirebaseService.swift */; };
+		EB08EF9329389C710081D122 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB08EF9229389C710081D122 /* NetworkError.swift */; };
+		EB08EF9529389CCF0081D122 /* ParkData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB08EF9429389CCF0081D122 /* ParkData.swift */; };
 		EB44383929369F6800CF32DB /* JournalDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB44383729369F6800CF32DB /* JournalDetail.storyboard */; };
 		EB44383B29369FB700CF32DB /* TripParkList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB44383A29369FB700CF32DB /* TripParkList.storyboard */; };
 		EB44383E29369FE300CF32DB /* NewTripDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB44383C29369FE300CF32DB /* NewTripDetail.storyboard */; };
@@ -54,6 +56,8 @@
 		EB08EF81293891830081D122 /* TripParkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripParkViewModel.swift; sourceTree = "<group>"; };
 		EB08EF83293895000081D122 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EB08EF9029389A760081D122 /* FirebaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseService.swift; sourceTree = "<group>"; };
+		EB08EF9229389C710081D122 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		EB08EF9429389CCF0081D122 /* ParkData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkData.swift; sourceTree = "<group>"; };
 		EB44383829369F6800CF32DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "NationalParkful/UI/User Settings/Base.lproj/JournalDetail.storyboard"; sourceTree = "<group>"; };
 		EB44383A29369FB700CF32DB /* TripParkList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TripParkList.storyboard; sourceTree = "<group>"; };
 		EB44383D29369FE300CF32DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "NationalParkful/UI/User Settings/Base.lproj/NewTripDetail.storyboard"; sourceTree = "<group>"; };
@@ -168,6 +172,7 @@
 		EB8E4EA42926E3860076EF2E /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				EB08EF9429389CCF0081D122 /* ParkData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -176,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				EB08EF9029389A760081D122 /* FirebaseService.swift */,
+				EB08EF9229389C710081D122 /* NetworkError.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -324,6 +330,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB08EF7029388E410081D122 /* ParkDetailViewModel.swift in Sources */,
+				EB08EF9529389CCF0081D122 /* ParkData.swift in Sources */,
 				EB08EF7E293890390081D122 /* JournalDetailViewModel.swift in Sources */,
 				EB08EF7C293890110081D122 /* JournalDetailViewController.swift in Sources */,
 				EB08EF80293891720081D122 /* TripParkViewController.swift in Sources */,
@@ -332,6 +339,7 @@
 				EB08EF7229388E620081D122 /* ParkDetailViewController.swift in Sources */,
 				EB08EF6E29388E270081D122 /* ParkListViewModel.swift in Sources */,
 				EBAEDFAC2925D28D00E9B460 /* AppDelegate.swift in Sources */,
+				EB08EF9329389C710081D122 /* NetworkError.swift in Sources */,
 				EB08EF7429388EFC0081D122 /* NewTripViewModel.swift in Sources */,
 				EB08EF82293891830081D122 /* TripParkViewModel.swift in Sources */,
 				EB08EF7629388F250081D122 /* NewTripViewController.swift in Sources */,
