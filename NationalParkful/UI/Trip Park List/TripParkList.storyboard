@@ -59,7 +59,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="RjJ-sX-HcK" kind="show" id="Yxz-vc-cLG"/>
+                                            <segue destination="RjJ-sX-HcK" kind="show" identifier="toJournalDetail" id="Yxz-vc-cLG"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -106,7 +106,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QhW-Bf-lOQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3639" y="1359"/>
+            <point key="canvasLocation" x="4566" y="1194"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="10V-Se-pM0">

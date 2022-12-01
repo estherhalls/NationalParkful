@@ -45,7 +45,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="SRe-tu-N3g" kind="show" id="MYo-nt-Rbd"/>
+                                    <segue destination="SRe-tu-N3g" kind="show" identifier="toParkDetail" id="MYo-nt-Rbd"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
