@@ -42,6 +42,7 @@
 		EBAEDFB52925D28F00E9B460 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBAEDFB42925D28F00E9B460 /* Assets.xcassets */; };
 		EBE9D443293926AA004A8EDE /* npsAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE9D442293926AA004A8EDE /* npsAPIService.swift */; };
 		EBE9D447293929B0004A8EDE /* npsEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE9D446293929B0004A8EDE /* npsEndpoint.swift */; };
+		EBE9D44A29393834004A8EDE /* NPSNetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE9D44929393834004A8EDE /* NPSNetworkController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,6 +78,7 @@
 		EBAEDFB92925D28F00E9B460 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EBE9D442293926AA004A8EDE /* npsAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = npsAPIService.swift; sourceTree = "<group>"; };
 		EBE9D446293929B0004A8EDE /* npsEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = npsEndpoint.swift; sourceTree = "<group>"; };
+		EBE9D44929393834004A8EDE /* NPSNetworkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPSNetworkController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,9 +187,8 @@
 			isa = PBXGroup;
 			children = (
 				EB08EF9029389A760081D122 /* FirebaseService.swift */,
-				EBE9D442293926AA004A8EDE /* npsAPIService.swift */,
-				EBE9D446293929B0004A8EDE /* npsEndpoint.swift */,
 				EB08EF9229389C710081D122 /* NetworkError.swift */,
+				EBE9D44929393834004A8EDE /* NPSNetworkController.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -241,8 +242,18 @@
 				EB8E4EA42926E3860076EF2E /* Models */,
 				EB8E4EA62926E3B20076EF2E /* UI */,
 				EB8E4EA32925D5310076EF2E /* Resources */,
+				EBE9D448293937B0004A8EDE /* Backburner */,
 			);
 			path = NationalParkful;
+			sourceTree = "<group>";
+		};
+		EBE9D448293937B0004A8EDE /* Backburner */ = {
+			isa = PBXGroup;
+			children = (
+				EBE9D442293926AA004A8EDE /* npsAPIService.swift */,
+				EBE9D446293929B0004A8EDE /* npsEndpoint.swift */,
+			);
+			path = Backburner;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -346,6 +357,7 @@
 				EB08EF7229388E620081D122 /* ParkDetailViewController.swift in Sources */,
 				EB08EF6E29388E270081D122 /* ParkListViewModel.swift in Sources */,
 				EBAEDFAC2925D28D00E9B460 /* AppDelegate.swift in Sources */,
+				EBE9D44A29393834004A8EDE /* NPSNetworkController.swift in Sources */,
 				EB08EF9329389C710081D122 /* NetworkError.swift in Sources */,
 				EB08EF7429388EFC0081D122 /* NewTripViewModel.swift in Sources */,
 				EB08EF82293891830081D122 /* TripParkViewModel.swift in Sources */,

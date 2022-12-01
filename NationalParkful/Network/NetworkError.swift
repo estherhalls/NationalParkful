@@ -10,21 +10,24 @@ import Foundation
 /// Error Object for throwing errors on concurrent tasks
 enum NetworkError: Error, LocalizedError {
 
-    case requestError(Error)
-    case badURL
-    case couldNotUnwrap
-    case errorDecoding
-  
-    var localizedDescription: String {
+    case invalidURL(String)
+    case thrownError(Error)
+    case noData
+    case unableToDecode
+    case noUser
+    
+    var errorDescription: String? {
         switch self {
-        case .requestError(let error):
-            return "Error performing the task: \(error.localizedDescription)"
-        case .badURL:
-            return "Unable to make the request with the given URL"
-        case .couldNotUnwrap:
-            return "Error parsing requested data"
-        case .errorDecoding:
-            return "Error ecountered when decoding the data"
+        case .invalidURL(let url):
+            return "Unable to reach the server. Please try again.\(url)"
+        case .thrownError(let error):
+            return "Error: \(error.localizedDescription) -> \(error)"
+        case .noData:
+            return "The server responded with no data. Please try again."
+        case .unableToDecode:
+            return "The server responded with bad data. Please try again."
+        case .noUser:
+            return "Do you need to sign in?"
         }
     }
 } // End of Enum
