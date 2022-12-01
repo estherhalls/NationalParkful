@@ -18,6 +18,13 @@
 		EB08EF7E293890390081D122 /* JournalDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB08EF7D293890390081D122 /* JournalDetailViewModel.swift */; };
 		EB08EF80293891720081D122 /* TripParkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB08EF7F293891720081D122 /* TripParkViewController.swift */; };
 		EB08EF82293891830081D122 /* TripParkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB08EF81293891830081D122 /* TripParkViewModel.swift */; };
+		EB08EF84293895000081D122 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB08EF83293895000081D122 /* GoogleService-Info.plist */; };
+		EB08EF87293896D90081D122 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = EB08EF86293896D90081D122 /* FirebaseAuth */; };
+		EB08EF89293896D90081D122 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = EB08EF88293896D90081D122 /* FirebaseDatabase */; };
+		EB08EF8B293896D90081D122 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = EB08EF8A293896D90081D122 /* FirebaseFirestore */; };
+		EB08EF8D293896D90081D122 /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = EB08EF8C293896D90081D122 /* FirebaseFunctions */; };
+		EB08EF8F293896D90081D122 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = EB08EF8E293896D90081D122 /* FirebaseStorage */; };
+		EB08EF9129389A760081D122 /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB08EF9029389A760081D122 /* FirebaseService.swift */; };
 		EB44383929369F6800CF32DB /* JournalDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB44383729369F6800CF32DB /* JournalDetail.storyboard */; };
 		EB44383B29369FB700CF32DB /* TripParkList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB44383A29369FB700CF32DB /* TripParkList.storyboard */; };
 		EB44383E29369FE300CF32DB /* NewTripDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB44383C29369FE300CF32DB /* NewTripDetail.storyboard */; };
@@ -45,6 +52,8 @@
 		EB08EF7D293890390081D122 /* JournalDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalDetailViewModel.swift; sourceTree = "<group>"; };
 		EB08EF7F293891720081D122 /* TripParkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripParkViewController.swift; sourceTree = "<group>"; };
 		EB08EF81293891830081D122 /* TripParkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripParkViewModel.swift; sourceTree = "<group>"; };
+		EB08EF83293895000081D122 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EB08EF9029389A760081D122 /* FirebaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseService.swift; sourceTree = "<group>"; };
 		EB44383829369F6800CF32DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "NationalParkful/UI/User Settings/Base.lproj/JournalDetail.storyboard"; sourceTree = "<group>"; };
 		EB44383A29369FB700CF32DB /* TripParkList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TripParkList.storyboard; sourceTree = "<group>"; };
 		EB44383D29369FE300CF32DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "NationalParkful/UI/User Settings/Base.lproj/NewTripDetail.storyboard"; sourceTree = "<group>"; };
@@ -67,6 +76,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB08EF89293896D90081D122 /* FirebaseDatabase in Frameworks */,
+				EB08EF87293896D90081D122 /* FirebaseAuth in Frameworks */,
+				EB08EF8B293896D90081D122 /* FirebaseFirestore in Frameworks */,
+				EB08EF8F293896D90081D122 /* FirebaseStorage in Frameworks */,
+				EB08EF8D293896D90081D122 /* FirebaseFunctions in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,6 +175,7 @@
 		EB8E4EA52926E3910076EF2E /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				EB08EF9029389A760081D122 /* FirebaseService.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -193,6 +208,7 @@
 		EBAEDF9F2925D28D00E9B460 = {
 			isa = PBXGroup;
 			children = (
+				EB08EF83293895000081D122 /* GoogleService-Info.plist */,
 				EBAEDFAA2925D28D00E9B460 /* NationalParkful */,
 				EBAEDFA92925D28D00E9B460 /* Products */,
 			);
@@ -233,6 +249,13 @@
 			dependencies = (
 			);
 			name = NationalParkful;
+			packageProductDependencies = (
+				EB08EF86293896D90081D122 /* FirebaseAuth */,
+				EB08EF88293896D90081D122 /* FirebaseDatabase */,
+				EB08EF8A293896D90081D122 /* FirebaseFirestore */,
+				EB08EF8C293896D90081D122 /* FirebaseFunctions */,
+				EB08EF8E293896D90081D122 /* FirebaseStorage */,
+			);
 			productName = NationalParkful;
 			productReference = EBAEDFA82925D28D00E9B460 /* NationalParkful.app */;
 			productType = "com.apple.product-type.application";
@@ -261,6 +284,9 @@
 				Base,
 			);
 			mainGroup = EBAEDF9F2925D28D00E9B460;
+			packageReferences = (
+				EB08EF85293896D90081D122 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = EBAEDFA92925D28D00E9B460 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -280,6 +306,7 @@
 				EB4438402936A00700CF32DB /* TripsList.storyboard in Resources */,
 				EB4438512936A36A00CF32DB /* HomePage.storyboard in Resources */,
 				EB44384C2936A32200CF32DB /* ParkList.storyboard in Resources */,
+				EB08EF84293895000081D122 /* GoogleService-Info.plist in Resources */,
 				EBAEDFB52925D28F00E9B460 /* Assets.xcassets in Resources */,
 				EB4438472936A29A00CF32DB /* ExploreMap.storyboard in Resources */,
 				EBAEDFB32925D28D00E9B460 /* Main.storyboard in Resources */,
@@ -300,6 +327,7 @@
 				EB08EF7E293890390081D122 /* JournalDetailViewModel.swift in Sources */,
 				EB08EF7C293890110081D122 /* JournalDetailViewController.swift in Sources */,
 				EB08EF80293891720081D122 /* TripParkViewController.swift in Sources */,
+				EB08EF9129389A760081D122 /* FirebaseService.swift in Sources */,
 				EB08EF7A29388FA10081D122 /* AllTripsListTableViewController.swift in Sources */,
 				EB08EF7229388E620081D122 /* ParkDetailViewController.swift in Sources */,
 				EB08EF6E29388E270081D122 /* ParkListViewModel.swift in Sources */,
@@ -556,6 +584,45 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EB08EF85293896D90081D122 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EB08EF86293896D90081D122 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EB08EF85293896D90081D122 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		EB08EF88293896D90081D122 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EB08EF85293896D90081D122 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		EB08EF8A293896D90081D122 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EB08EF85293896D90081D122 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		EB08EF8C293896D90081D122 /* FirebaseFunctions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EB08EF85293896D90081D122 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFunctions;
+		};
+		EB08EF8E293896D90081D122 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EB08EF85293896D90081D122 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EBAEDFA02925D28D00E9B460 /* Project object */;
 }
