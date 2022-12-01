@@ -30,7 +30,6 @@
 		EB44383929369F6800CF32DB /* JournalDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB44383729369F6800CF32DB /* JournalDetail.storyboard */; };
 		EB44383B29369FB700CF32DB /* TripParkList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB44383A29369FB700CF32DB /* TripParkList.storyboard */; };
 		EB44383E29369FE300CF32DB /* NewTripDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB44383C29369FE300CF32DB /* NewTripDetail.storyboard */; };
-		EB4438402936A00700CF32DB /* TripsList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB44383F2936A00700CF32DB /* TripsList.storyboard */; };
 		EB4438472936A29A00CF32DB /* ExploreMap.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB4438452936A29A00CF32DB /* ExploreMap.storyboard */; };
 		EB4438492936A2FB00CF32DB /* ParkDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB4438482936A2FB00CF32DB /* ParkDetail.storyboard */; };
 		EB44384C2936A32200CF32DB /* ParkList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB44384A2936A32200CF32DB /* ParkList.storyboard */; };
@@ -43,6 +42,7 @@
 		EBE9D443293926AA004A8EDE /* npsAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE9D442293926AA004A8EDE /* npsAPIService.swift */; };
 		EBE9D447293929B0004A8EDE /* npsEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE9D446293929B0004A8EDE /* npsEndpoint.swift */; };
 		EBE9D44A29393834004A8EDE /* NPSNetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE9D44929393834004A8EDE /* NPSNetworkController.swift */; };
+		EBE9D44F293946B3004A8EDE /* TripsList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBE9D44D293946B3004A8EDE /* TripsList.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,7 +64,6 @@
 		EB44383829369F6800CF32DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "NationalParkful/UI/User Settings/Base.lproj/JournalDetail.storyboard"; sourceTree = "<group>"; };
 		EB44383A29369FB700CF32DB /* TripParkList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TripParkList.storyboard; sourceTree = "<group>"; };
 		EB44383D29369FE300CF32DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "NationalParkful/UI/User Settings/Base.lproj/NewTripDetail.storyboard"; sourceTree = "<group>"; };
-		EB44383F2936A00700CF32DB /* TripsList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TripsList.storyboard; sourceTree = "<group>"; };
 		EB4438462936A29A00CF32DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "NationalParkful/UI/Home Settings/Base.lproj/ExploreMap.storyboard"; sourceTree = "<group>"; };
 		EB4438482936A2FB00CF32DB /* ParkDetail.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ParkDetail.storyboard; sourceTree = "<group>"; };
 		EB44384B2936A32200CF32DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "NationalParkful/UI/Home Settings/Base.lproj/ParkList.storyboard"; sourceTree = "<group>"; };
@@ -79,6 +78,7 @@
 		EBE9D442293926AA004A8EDE /* npsAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = npsAPIService.swift; sourceTree = "<group>"; };
 		EBE9D446293929B0004A8EDE /* npsEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = npsEndpoint.swift; sourceTree = "<group>"; };
 		EBE9D44929393834004A8EDE /* NPSNetworkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPSNetworkController.swift; sourceTree = "<group>"; };
+		EBE9D44E293946B3004A8EDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "NationalParkful/UI/Home Settings/Base.lproj/TripsList.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,7 +110,7 @@
 		EB08EF6229388BE40081D122 /* All Trips List */ = {
 			isa = PBXGroup;
 			children = (
-				EB44383F2936A00700CF32DB /* TripsList.storyboard */,
+				EBE9D44D293946B3004A8EDE /* TripsList.storyboard */,
 				EB08EF7929388FA10081D122 /* AllTripsListTableViewController.swift */,
 			);
 			path = "All Trips List";
@@ -325,8 +325,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB44384E2936A34600CF32DB /* UserSettings.storyboard in Resources */,
+				EBE9D44F293946B3004A8EDE /* TripsList.storyboard in Resources */,
 				EB44383E29369FE300CF32DB /* NewTripDetail.storyboard in Resources */,
-				EB4438402936A00700CF32DB /* TripsList.storyboard in Resources */,
 				EB4438512936A36A00CF32DB /* HomePage.storyboard in Resources */,
 				EB44384C2936A32200CF32DB /* ParkList.storyboard in Resources */,
 				EB08EF84293895000081D122 /* GoogleService-Info.plist in Resources */,
@@ -417,6 +417,14 @@
 				EBAEDFB22925D28D00E9B460 /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EBE9D44D293946B3004A8EDE /* TripsList.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EBE9D44E293946B3004A8EDE /* Base */,
+			);
+			name = TripsList.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

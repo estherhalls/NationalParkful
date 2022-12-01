@@ -3,6 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -70,7 +71,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="azU-ZE-spl" kind="relationship" relationship="rootViewController" id="pvU-nT-mo5"/>
+                        <segue destination="2xc-26-hr6" kind="relationship" relationship="rootViewController" id="pvU-nT-mo5"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cYe-Fd-qEi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -124,6 +125,68 @@
             </objects>
             <point key="canvasLocation" x="2947" y="-195"/>
         </scene>
+        <!--All Trips List Table View Controller-->
+        <scene sceneID="Q0U-1b-8aX">
+            <objects>
+                <tableViewController id="2xc-26-hr6" customClass="AllTripsListTableViewController" customModule="NationalParkful" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="iGv-Qc-IIQ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="41U-ee-CMM">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="75"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="PSU-hg-3Bj">
+                                    <rect key="frame" x="131" y="21" width="131" height="32"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <segments>
+                                        <segment title="Upcoming"/>
+                                        <segment title="Complete"/>
+                                    </segments>
+                                </segmentedControl>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </view>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="8ZJ-bE-ZuR" style="IBUITableViewCellStyleDefault" id="gbe-V2-4lS">
+                                <rect key="frame" x="0.0" y="125" width="393" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gbe-V2-4lS" id="H2d-sR-yFY">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8ZJ-bE-ZuR">
+                                            <rect key="frame" x="20" y="0.0" width="353" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="Lh0-UO-GeD" kind="show" id="NPA-uk-XBZ"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="2xc-26-hr6" id="cCd-dV-ZZx"/>
+                            <outlet property="delegate" destination="2xc-26-hr6" id="jo4-7f-u8N"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="jLF-Q7-4ON">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Qen-am-HUh">
+                            <connections>
+                                <segue destination="zcf-n1-1Gn" kind="show" id="hyG-nl-JUI"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sii-H5-OD8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2841.9847328244273" y="202.11267605633805"/>
+        </scene>
         <!--ExploreMap-->
         <scene sceneID="IEB-RC-urE">
             <objects>
@@ -174,21 +237,14 @@
             </objects>
             <point key="canvasLocation" x="1481" y="-291"/>
         </scene>
-        <!--TripsList-->
-        <scene sceneID="ufo-8V-Vpp">
-            <objects>
-                <viewControllerPlaceholder storyboardName="TripsList" id="azU-ZE-spl" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="Xld-2t-WO9"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Y3J-Qy-NgV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3160" y="-292"/>
-        </scene>
     </scenes>
     <resources>
         <image name="airplane.circle" catalog="system" width="128" height="123"/>
         <image name="globe.americas.fill" catalog="system" width="128" height="123"/>
         <image name="house.circle" catalog="system" width="128" height="123"/>
         <image name="mountain.2.circle" catalog="system" width="128" height="123"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
