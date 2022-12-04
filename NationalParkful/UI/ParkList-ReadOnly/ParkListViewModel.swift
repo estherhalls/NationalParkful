@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+class ParkListViewModel {
+    
+
+
+    
+} // End of Class

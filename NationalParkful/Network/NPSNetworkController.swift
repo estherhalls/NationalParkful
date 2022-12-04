@@ -17,7 +17,7 @@ struct NetworkController {
     // Keys for URL Components
     private static let kParksComponent = "parks"
     private static let kAPIKeyKey = "api_key"
-    private static let kAPIKeyValue = "zo5biGMft4UFbCYYBK8TCqv9AXKjqlKEjFTaKrxS"
+    private static let kAPIKeyValue = "uK121K0V4jZlhcQcEbSe3k8AfKLuMHda2970mUbb"
     private static let kParkCodeKey = "parkCode"
     private static let kLimitKey = "limit"
     private static let kLimitValue = "500"
