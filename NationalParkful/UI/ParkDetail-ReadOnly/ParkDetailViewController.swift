@@ -79,23 +79,7 @@ class ParkDetailViewController: UIViewController {
             }
         }
     }
-    
-    
-    
-    // Found online for displaying image from image URL
-    //    let urlYourURL = URL (string: "home_new.png")
-    //
-    //    avatarImageView.loadurl(url: urlYourURL!)
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
+
     
 // MARK: - Actions
     /// I want to navigate forward and back based on the current park placement on the index defined on the table view controller
