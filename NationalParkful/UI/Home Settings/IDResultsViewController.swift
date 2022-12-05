@@ -17,7 +17,7 @@ class IDResultsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        userIDLabel.text = KeychainItem.currentUserIdentifier
+//        userIDLabel.text = KeychainItem.currentUserIdentifier
     }
     
     

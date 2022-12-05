@@ -12,11 +12,11 @@ class UserSettingsViewController: UIViewController {
     @IBOutlet weak var loginWithAppleStackView: UIStackView!
     
     // For each of your app's views that need information about the signed-in user, attach a listener to the FIRAuth object. This listener gets called whenever the user's sign-in state changes.
-//    override func viewWillAppear(_ animated: Bool) {
-//        handle = Auth.auth().addStateDidChangeListener { auth, user in
-//          // ...
-//        }
-//    }
+    //    override func viewWillAppear(_ animated: Bool) {
+    //        handle = Auth.auth().addStateDidChangeListener { auth, user in
+    //          // ...
+    //        }
+    //    }
     override func viewDidLoad() {
         super.viewDidLoad()
         setupProviderLoginView()
@@ -25,6 +25,25 @@ class UserSettingsViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         performExistingAccountSetupFlows()
+    }
+    
+    // Check User Credentials at Launch
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        let appleIDProvider = ASAuthorizationAppleIDProvider()
+        appleIDProvider.getCredentialState(forUserID: KeychainItem.currentUserIdentifier) { (credentialState, error) in
+            switch credentialState {
+            case .authorized:
+                break // The Apple ID credential is valid.
+            case .revoked, .notFound:
+                // The Apple ID credential is either revoked or was not found, so show the sign-in UI.
+                DispatchQueue.main.async {
+                    self.window?.rootViewController?.showLoginViewController()
+                }
+            default:
+                break
+            }
+        }
+        return true
     }
     
     // MARK: - Login With Apple
@@ -67,10 +86,10 @@ class UserSettingsViewController: UIViewController {
     }
     
     /// Authorization controller calls presentationAnchor function to get the window from the app where it presents the sign in with apple content to the user in a modal sheet
-    func presentationAnchor(for controller: ASAuthorizationController) -> ASPresentationAnchor {
+    @objc(presentationAnchorForAuthorizationController:) func presentationAnchor(for controller: ASAuthorizationController) -> ASPresentationAnchor {
         return self.view.window!
     }
-
+    
 } // End of Class
 
 extension UserSettingsViewController: ASAuthorizationControllerDelegate {
@@ -84,20 +103,20 @@ extension UserSettingsViewController: ASAuthorizationControllerDelegate {
             let fullName = appleIDCredential.fullName
             let email = appleIDCredential.email
             
-            self.saveUserInKeychain(userIdentifier)
+//            self.saveUserInKeychain(userIdentifier)
             
             self.showIDResultsViewController(userIdentifier: userIdentifier, fullName: fullName, email: email)
             
         case let passwordCredential as ASPasswordCredential:
-        
+            
             // Sign in using an existing iCloud Keychain credential.
             let username = passwordCredential.user
             let password = passwordCredential.password
             
             // Show password credential as an alert
             DispatchQueue.main.async {
-                        self.showPasswordCredentialAlert(username: username, password: password)
-                    }
+                self.showPasswordCredentialAlert(username: username, password: password)
+            }
         default:
             break
         }
@@ -108,14 +127,44 @@ extension UserSettingsViewController: ASAuthorizationControllerDelegate {
         // Handle error.
     }
     
-    private func saveUserInKeychain(_ userIdentifier: String) {
-        do {
-            try KeychainItem(service: "com.example.apple-samplecode.juice", account: "userIdentifier").saveItem(userIdentifier)
-        } catch {
-            print("Unable to save userIdentifier to keychain.")
+    //    // Save User in Keychain
+    //    private func saveUserInKeychain(_ userIdentifier: String) {
+    //        do {
+    //            try KeychainItem(service: "com.example.apple-samplecode.juice", account: "userIdentifier").saveItem(userIdentifier)
+    //        } catch {
+    //            print("Unable to save userIdentifier to keychain.")
+    //        }
+    //    }
+    
+    private func showIDResultsViewController(userIdentifier: String, fullName: PersonNameComponents?, email: String?) {
+        guard let viewController = self.presentingViewController as? IDResultsViewController
+        else { return }
+        
+        DispatchQueue.main.async {
+            viewController.userIDLabel.text = userIdentifier
+            if let givenName = fullName?.givenName {
+                viewController.firstNameLabel.text = givenName
+            }
+            if let familyName = fullName?.familyName {
+                viewController.lastNameLabel.text = familyName
+            }
+            if let email = email {
+                viewController.emailLabel.text = email
+            }
+            self.dismiss(animated: true, completion: nil)
         }
     }
+    
+    private func showPasswordCredentialAlert(username: String, password: String) {
+        let message = "The app has received your selected credential from the keychain. \n\n Username: \(username)\n Password: \(password)"
+        let alertController = UIAlertController(title: "Keychain Credential Received",
+                                                message: message,
+                                                preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "Dismiss", style: .cancel, handler: nil))
+        self.present(alertController, animated: true, completion: nil)
+    }
 }
+
 extension UIViewController {
     
     func showUserSettingsViewController() {

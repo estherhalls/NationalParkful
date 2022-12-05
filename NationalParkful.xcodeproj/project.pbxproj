@@ -37,6 +37,8 @@
 		EB4438512936A36A00CF32DB /* HomePage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB44384F2936A36A00CF32DB /* HomePage.storyboard */; };
 		EB4CDE05293E6DA900B4D095 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4CDE04293E6DA900B4D095 /* CreateAccountViewController.swift */; };
 		EB4CDE07293E7C3600B4D095 /* IDResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4CDE06293E7C3600B4D095 /* IDResultsViewController.swift */; };
+		EB4CDE09293E8C2F00B4D095 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4CDE08293E8C2F00B4D095 /* Trip.swift */; };
+		EB4CDE0B293E93BE00B4D095 /* Journal.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4CDE0A293E93BE00B4D095 /* Journal.swift */; };
 		EBAEDFAC2925D28D00E9B460 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAEDFAB2925D28D00E9B460 /* AppDelegate.swift */; };
 		EBAEDFAE2925D28D00E9B460 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAEDFAD2925D28D00E9B460 /* SceneDelegate.swift */; };
 		EBAEDFB32925D28D00E9B460 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBAEDFB12925D28D00E9B460 /* Main.storyboard */; };
@@ -75,6 +77,8 @@
 		EB4438502936A36A00CF32DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "NationalParkful/UI/Home Settings/Base.lproj/HomePage.storyboard"; sourceTree = "<group>"; };
 		EB4CDE04293E6DA900B4D095 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		EB4CDE06293E7C3600B4D095 /* IDResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDResultsViewController.swift; sourceTree = "<group>"; };
+		EB4CDE08293E8C2F00B4D095 /* Trip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
+		EB4CDE0A293E93BE00B4D095 /* Journal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Journal.swift; sourceTree = "<group>"; };
 		EBAEDFA82925D28D00E9B460 /* NationalParkful.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NationalParkful.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBAEDFAB2925D28D00E9B460 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBAEDFAD2925D28D00E9B460 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -187,6 +191,8 @@
 			isa = PBXGroup;
 			children = (
 				EB08EF9429389CCF0081D122 /* Park.swift */,
+				EB4CDE08293E8C2F00B4D095 /* Trip.swift */,
+				EB4CDE0A293E93BE00B4D095 /* Journal.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -359,6 +365,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB08EF7029388E410081D122 /* ParkDetailViewModel.swift in Sources */,
+				EB4CDE0B293E93BE00B4D095 /* Journal.swift in Sources */,
 				EB08EF9529389CCF0081D122 /* Park.swift in Sources */,
 				EB08EF7E293890390081D122 /* JournalDetailViewModel.swift in Sources */,
 				EB08EF7C293890110081D122 /* JournalDetailViewController.swift in Sources */,
@@ -370,6 +377,7 @@
 				EB08EF7229388E620081D122 /* ParkDetailViewController.swift in Sources */,
 				EB08EF6E29388E270081D122 /* ParkListViewModel.swift in Sources */,
 				EBAEDFAC2925D28D00E9B460 /* AppDelegate.swift in Sources */,
+				EB4CDE09293E8C2F00B4D095 /* Trip.swift in Sources */,
 				EBE9D44A29393834004A8EDE /* NPSNetworkController.swift in Sources */,
 				EB08EF9329389C710081D122 /* NetworkError.swift in Sources */,
 				EB4CDE07293E7C3600B4D095 /* IDResultsViewController.swift in Sources */,
