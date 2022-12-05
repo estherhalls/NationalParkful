@@ -96,6 +96,7 @@
         <!--Navigation Controller-->
         <scene sceneID="vb5-ol-3sf">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lvc-Zm-DhD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3xO-uj-OwW" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" id="PpN-3n-67e"/>
                     <toolbarItems/>
@@ -108,13 +109,13 @@
                         <segue destination="2xc-26-hr6" kind="relationship" relationship="rootViewController" id="drC-TW-1NW"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lvc-Zm-DhD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3769" y="202"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="oey-PR-tqS">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8pt-S1-2aC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="zdA-Un-iMf" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3GG-cm-B1y">
@@ -126,7 +127,6 @@
                         <segue destination="3xO-uj-OwW" kind="relationship" relationship="viewControllers" id="Cfz-R2-1IJ"/>
                     </connections>
                 </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8pt-S1-2aC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2841.9847328244273" y="202.11267605633805"/>
         </scene>

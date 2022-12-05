@@ -10,9 +10,10 @@
         <scene sceneID="g3h-6u-GaF">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Txm-Bg-PSm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <navigationController navigationBarHidden="YES" id="LHc-AZ-WiW" sceneMemberID="viewController">
+                <navigationController id="LHc-AZ-WiW" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="house.circle" catalog="system" id="2px-DC-ZXS"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ypl-LA-vrO">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
