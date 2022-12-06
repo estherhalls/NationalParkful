@@ -7,6 +7,7 @@
 
 import Foundation
 import FirebaseFirestore
+import FirebaseAuth
 
 // User data to and from Firebase
 
@@ -22,8 +23,15 @@ protocol FirebaseSyncable {
     /// underscore in save function is an empty argument label because log is also in our parameters
 }
 
-struct FirebaseService: FirebaseSyncable {
+//
+//struct FirebaseService: FirebaseSyncable {
+//    let ref = Firestore.firestore()
+//
     
-    let ref = Firestore.firestore()
     
-} // End of Struct
+//    func saveUser(_ appUser: AppUser) {
+        /// UUID is what makes each entry unique. userData is what I named the unique dictionary representation of model object on AppUser model file.
+//        ref.collection(AppUser.Key.collectionType).document(appUser.uuid).setData(appUser.userData)
+//    }
+    
+//} // End of Struct
