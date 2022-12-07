@@ -7,31 +7,43 @@
 
 import UIKit
 import AuthenticationServices
+import FirebaseAuth
 
-//class IDResultsViewController: UIViewController {
-//    @IBOutlet weak var userIDLabel: UILabel!
-//    @IBOutlet weak var firstNameLabel: UILabel!
-//    @IBOutlet weak var lastNameLabel: UILabel!
-//    @IBOutlet weak var emailLabel: UILabel!
-//    @IBOutlet weak var signOutButton: UIButton!
-//
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-////        userIDLabel.text = KeychainItem.currentUserIdentifier
-//    }
-//
-//
-//    @IBAction func signOutTapped(_ sender: Any) {
-//
-//        // Clear the user interface.
-//        userIDLabel.text = ""
-//        firstNameLabel.text = ""
-//        lastNameLabel.text = ""
-//        emailLabel.text = ""
-//
-//        // Display the login controller again.
-//        DispatchQueue.main.async {
-//            self.showUserSettingsViewController()
-//        }
-//    }
-//}
+class IDResultsViewController: UIViewController {
+    @IBOutlet weak var userIDLabel: UILabel!
+    @IBOutlet weak var firstNameLabel: UILabel!
+    @IBOutlet weak var lastNameLabel: UILabel!
+    @IBOutlet weak var emailLabel: UILabel!
+    @IBOutlet weak var signOutButton: UIButton!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        //        userIDLabel.text = KeychainItem.currentUserIdentifier
+    }
+    
+    
+    @IBAction func signOutTapped(_ sender: Any) {
+        
+        // Clear the user interface.
+        userIDLabel.text = ""
+        firstNameLabel.text = ""
+        lastNameLabel.text = ""
+        emailLabel.text = ""
+
+        // Logout
+        let firebaseAuth = Auth.auth()
+        do {
+            try firebaseAuth.signOut()
+            
+        } catch let signOutError as NSError {
+            print("Error signing out: %@", signOutError)
+        }
+        
+        // Display the login controller
+        let userStoryboard = UIStoryboard(name: "UserSettings", bundle: nil)
+        let loginVC = userStoryboard.instantiateViewController(withIdentifier: "Login")
+        
+        self.present(loginVC, animated: true, completion: nil)
+        
+    }
+}

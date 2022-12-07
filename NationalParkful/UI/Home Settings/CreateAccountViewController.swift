@@ -41,8 +41,8 @@ class CreateAccountViewController: UIViewController {
                 return
             }
             print("You have signed in!")
-            strongSelf.usernameTextField.isHidden = true
-            strongSelf.passwordTextField.isHidden = true
+            strongSelf.usernameTextField.placeholder = ""
+            strongSelf.passwordTextField.placeholder = ""
         }
         
         // Get Auth instance

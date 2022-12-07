@@ -6,16 +6,36 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-       
-        
         
     }
+    
+
+    @IBAction func userButtonTapped(_ sender: Any) {
+    
+        // Check if any user is signed in
+        if Auth.auth().currentUser != nil {
+            // User is signed in. Go to IDResults View
+            let storyboard = UIStoryboard(name: "UserSettings", bundle: nil)
+            let idResultsVC = storyboard.instantiateViewController(withIdentifier: "IDResults")
+
+            self.present(idResultsVC, animated: true, completion: nil)
+
+        } else {
+            // No user is signed in. Go to UserSettings (login)
+            let storyboard = UIStoryboard(name: "UserSettings", bundle: nil)
+            let loginVC = storyboard.instantiateViewController(withIdentifier: "Login")
+
+            self.present(loginVC, animated: true, completion: nil)
+
+        }
+    }
+    
     
     
     /*
