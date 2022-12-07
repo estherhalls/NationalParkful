@@ -26,7 +26,7 @@
 		EB08EF8F293896D90081D122 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = EB08EF8E293896D90081D122 /* FirebaseStorage */; };
 		EB08EF9129389A760081D122 /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB08EF9029389A760081D122 /* FirebaseService.swift */; };
 		EB08EF9329389C710081D122 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB08EF9229389C710081D122 /* NetworkError.swift */; };
-		EB08EF9529389CCF0081D122 /* ParkData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB08EF9429389CCF0081D122 /* ParkData.swift */; };
+		EB08EF9529389CCF0081D122 /* Park.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB08EF9429389CCF0081D122 /* Park.swift */; };
 		EB44383929369F6800CF32DB /* JournalDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB44383729369F6800CF32DB /* JournalDetail.storyboard */; };
 		EB44383B29369FB700CF32DB /* TripParkList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB44383A29369FB700CF32DB /* TripParkList.storyboard */; };
 		EB44383E29369FE300CF32DB /* NewTripDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB44383C29369FE300CF32DB /* NewTripDetail.storyboard */; };
@@ -35,6 +35,10 @@
 		EB44384C2936A32200CF32DB /* ParkList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB44384A2936A32200CF32DB /* ParkList.storyboard */; };
 		EB44384E2936A34600CF32DB /* UserSettings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB44384D2936A34600CF32DB /* UserSettings.storyboard */; };
 		EB4438512936A36A00CF32DB /* HomePage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB44384F2936A36A00CF32DB /* HomePage.storyboard */; };
+		EB4CDE05293E6DA900B4D095 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4CDE04293E6DA900B4D095 /* CreateAccountViewController.swift */; };
+		EB4CDE07293E7C3600B4D095 /* IDResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4CDE06293E7C3600B4D095 /* IDResultsViewController.swift */; };
+		EB4CDE09293E8C2F00B4D095 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4CDE08293E8C2F00B4D095 /* Trip.swift */; };
+		EB4CDE0B293E93BE00B4D095 /* Journal.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4CDE0A293E93BE00B4D095 /* Journal.swift */; };
 		EBAEDFAC2925D28D00E9B460 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAEDFAB2925D28D00E9B460 /* AppDelegate.swift */; };
 		EBAEDFAE2925D28D00E9B460 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAEDFAD2925D28D00E9B460 /* SceneDelegate.swift */; };
 		EBAEDFB32925D28D00E9B460 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBAEDFB12925D28D00E9B460 /* Main.storyboard */; };
@@ -43,6 +47,8 @@
 		EBE9D447293929B0004A8EDE /* npsEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE9D446293929B0004A8EDE /* npsEndpoint.swift */; };
 		EBE9D44A29393834004A8EDE /* NPSNetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE9D44929393834004A8EDE /* NPSNetworkController.swift */; };
 		EBE9D44F293946B3004A8EDE /* TripsList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBE9D44D293946B3004A8EDE /* TripsList.storyboard */; };
+		EBE9D45129394EE1004A8EDE /* UserSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE9D45029394EE1004A8EDE /* UserSettingsViewController.swift */; };
+		EBE9D45329394EF4004A8EDE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE9D45229394EF4004A8EDE /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,7 +66,7 @@
 		EB08EF83293895000081D122 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EB08EF9029389A760081D122 /* FirebaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseService.swift; sourceTree = "<group>"; };
 		EB08EF9229389C710081D122 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
-		EB08EF9429389CCF0081D122 /* ParkData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkData.swift; sourceTree = "<group>"; };
+		EB08EF9429389CCF0081D122 /* Park.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Park.swift; sourceTree = "<group>"; };
 		EB44383829369F6800CF32DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "NationalParkful/UI/User Settings/Base.lproj/JournalDetail.storyboard"; sourceTree = "<group>"; };
 		EB44383A29369FB700CF32DB /* TripParkList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TripParkList.storyboard; sourceTree = "<group>"; };
 		EB44383D29369FE300CF32DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "NationalParkful/UI/User Settings/Base.lproj/NewTripDetail.storyboard"; sourceTree = "<group>"; };
@@ -69,6 +75,10 @@
 		EB44384B2936A32200CF32DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "NationalParkful/UI/Home Settings/Base.lproj/ParkList.storyboard"; sourceTree = "<group>"; };
 		EB44384D2936A34600CF32DB /* UserSettings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UserSettings.storyboard; sourceTree = "<group>"; };
 		EB4438502936A36A00CF32DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "NationalParkful/UI/Home Settings/Base.lproj/HomePage.storyboard"; sourceTree = "<group>"; };
+		EB4CDE04293E6DA900B4D095 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		EB4CDE06293E7C3600B4D095 /* IDResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDResultsViewController.swift; sourceTree = "<group>"; };
+		EB4CDE08293E8C2F00B4D095 /* Trip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
+		EB4CDE0A293E93BE00B4D095 /* Journal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Journal.swift; sourceTree = "<group>"; };
 		EBAEDFA82925D28D00E9B460 /* NationalParkful.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NationalParkful.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBAEDFAB2925D28D00E9B460 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBAEDFAD2925D28D00E9B460 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +89,8 @@
 		EBE9D446293929B0004A8EDE /* npsEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = npsEndpoint.swift; sourceTree = "<group>"; };
 		EBE9D44929393834004A8EDE /* NPSNetworkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPSNetworkController.swift; sourceTree = "<group>"; };
 		EBE9D44E293946B3004A8EDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "NationalParkful/UI/Home Settings/Base.lproj/TripsList.storyboard"; sourceTree = "<group>"; };
+		EBE9D45029394EE1004A8EDE /* UserSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettingsViewController.swift; sourceTree = "<group>"; };
+		EBE9D45229394EF4004A8EDE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,7 +190,9 @@
 		EB8E4EA42926E3860076EF2E /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				EB08EF9429389CCF0081D122 /* ParkData.swift */,
+				EB08EF9429389CCF0081D122 /* Park.swift */,
+				EB4CDE08293E8C2F00B4D095 /* Trip.swift */,
+				EB4CDE0A293E93BE00B4D095 /* Journal.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -214,6 +228,10 @@
 				EB44384F2936A36A00CF32DB /* HomePage.storyboard */,
 				EB44384D2936A34600CF32DB /* UserSettings.storyboard */,
 				EBAEDFB12925D28D00E9B460 /* Main.storyboard */,
+				EBE9D45229394EF4004A8EDE /* HomeViewController.swift */,
+				EBE9D45029394EE1004A8EDE /* UserSettingsViewController.swift */,
+				EB4CDE04293E6DA900B4D095 /* CreateAccountViewController.swift */,
+				EB4CDE06293E7C3600B4D095 /* IDResultsViewController.swift */,
 			);
 			path = "Home Settings";
 			sourceTree = "<group>";
@@ -347,21 +365,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB08EF7029388E410081D122 /* ParkDetailViewModel.swift in Sources */,
-				EB08EF9529389CCF0081D122 /* ParkData.swift in Sources */,
+				EB4CDE0B293E93BE00B4D095 /* Journal.swift in Sources */,
+				EB08EF9529389CCF0081D122 /* Park.swift in Sources */,
 				EB08EF7E293890390081D122 /* JournalDetailViewModel.swift in Sources */,
 				EB08EF7C293890110081D122 /* JournalDetailViewController.swift in Sources */,
 				EBE9D447293929B0004A8EDE /* npsEndpoint.swift in Sources */,
+				EBE9D45329394EF4004A8EDE /* HomeViewController.swift in Sources */,
 				EB08EF80293891720081D122 /* TripParkViewController.swift in Sources */,
 				EB08EF9129389A760081D122 /* FirebaseService.swift in Sources */,
 				EB08EF7A29388FA10081D122 /* AllTripsListTableViewController.swift in Sources */,
 				EB08EF7229388E620081D122 /* ParkDetailViewController.swift in Sources */,
 				EB08EF6E29388E270081D122 /* ParkListViewModel.swift in Sources */,
 				EBAEDFAC2925D28D00E9B460 /* AppDelegate.swift in Sources */,
+				EB4CDE09293E8C2F00B4D095 /* Trip.swift in Sources */,
 				EBE9D44A29393834004A8EDE /* NPSNetworkController.swift in Sources */,
 				EB08EF9329389C710081D122 /* NetworkError.swift in Sources */,
+				EB4CDE07293E7C3600B4D095 /* IDResultsViewController.swift in Sources */,
+				EB4CDE05293E6DA900B4D095 /* CreateAccountViewController.swift in Sources */,
 				EB08EF7429388EFC0081D122 /* NewTripViewModel.swift in Sources */,
 				EB08EF82293891830081D122 /* TripParkViewModel.swift in Sources */,
 				EB08EF7629388F250081D122 /* NewTripViewController.swift in Sources */,
+				EBE9D45129394EE1004A8EDE /* UserSettingsViewController.swift in Sources */,
 				EBAEDFAE2925D28D00E9B460 /* SceneDelegate.swift in Sources */,
 				EB08EF7829388F420081D122 /* ParkListTableViewController.swift in Sources */,
 				EBE9D443293926AA004A8EDE /* npsAPIService.swift in Sources */,

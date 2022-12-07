@@ -120,7 +120,6 @@ struct NetworkController {
         }.resume()
     } // End of Network Call 2
     
-
     
     // Getting images from the internet requires network call with completion handler
     /// Remember to Import UIKit at top of file
@@ -148,3 +147,4 @@ struct NetworkController {
     } // End of Network Call 3
     
 } // End of Struct
+

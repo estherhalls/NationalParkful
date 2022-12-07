@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3xO-uj-OwW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zdA-Un-iMf">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -7,41 +7,20 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--TripParkList-->
-        <scene sceneID="g9f-jZ-Eau">
-            <objects>
-                <viewControllerPlaceholder storyboardName="TripParkList" id="Lh0-UO-GeD" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="f5t-89-ZgH"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ybZ-QU-Owx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4386.259541984733" y="276.05633802816902"/>
-        </scene>
-        <!--NewTripDetail-->
-        <scene sceneID="w7c-nl-5MX">
-            <objects>
-                <viewControllerPlaceholder storyboardName="NewTripDetail" id="zcf-n1-1Gn" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="HbK-3r-Ob5"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iJO-5p-qgW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4394.6564885496182" y="119.01408450704226"/>
-        </scene>
-        <!--All Trips List Table View Controller-->
+        <!--My Trips-->
         <scene sceneID="Q0U-1b-8aX">
             <objects>
-                <tableViewController id="2xc-26-hr6" customClass="AllTripsListTableViewController" customModule="NationalParkful" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="tripsList" id="2xc-26-hr6" customClass="AllTripsListTableViewController" customModule="NationalParkful" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="iGv-Qc-IIQ">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" id="41U-ee-CMM">
-                            <rect key="frame" x="0.0" y="0.0" width="393" height="75"/>
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="103"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="PSU-hg-3Bj">
-                                    <rect key="frame" x="131" y="21" width="131" height="32"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="PSU-hg-3Bj">
+                                    <rect key="frame" x="114" y="36" width="165" height="32"/>
                                     <segments>
                                         <segment title="Upcoming"/>
                                         <segment title="Complete"/>
@@ -49,10 +28,14 @@
                                 </segmentedControl>
                             </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="PSU-hg-3Bj" firstAttribute="centerY" secondItem="41U-ee-CMM" secondAttribute="centerY" id="Sqf-bj-IAg"/>
+                                <constraint firstItem="PSU-hg-3Bj" firstAttribute="centerX" secondItem="41U-ee-CMM" secondAttribute="centerX" id="Zmd-p6-uqd"/>
+                            </constraints>
                         </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="8ZJ-bE-ZuR" style="IBUITableViewCellStyleDefault" id="gbe-V2-4lS">
-                                <rect key="frame" x="0.0" y="125" width="393" height="43.666667938232422"/>
+                                <rect key="frame" x="0.0" y="153" width="393" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gbe-V2-4lS" id="H2d-sR-yFY">
                                     <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
@@ -68,7 +51,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="Lh0-UO-GeD" kind="show" id="NPA-uk-XBZ"/>
+                                    <segue destination="Lh0-UO-GeD" kind="show" identifier="toExistingTrip" id="NPA-uk-XBZ"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -77,22 +60,45 @@
                             <outlet property="delegate" destination="2xc-26-hr6" id="jo4-7f-u8N"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="jLF-Q7-4ON">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Qen-am-HUh">
+                    <navigationItem key="navigationItem" title="My Trips" leftItemsSupplementBackButton="YES" id="jLF-Q7-4ON">
+                        <barButtonItem key="backBarButtonItem" title="Trips" id="h9F-wh-Q84"/>
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="BTG-rq-Ugw">
                             <connections>
-                                <segue destination="zcf-n1-1Gn" kind="show" id="hyG-nl-JUI"/>
+                                <segue destination="zcf-n1-1Gn" kind="show" id="bdW-KS-0Mb"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sii-H5-OD8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3768.7022900763359" y="202.11267605633805"/>
+            <point key="canvasLocation" x="4695.419847328244" y="202.11267605633805"/>
+        </scene>
+        <!--TripParkList-->
+        <scene sceneID="g9f-jZ-Eau">
+            <objects>
+                <viewControllerPlaceholder storyboardName="TripParkList" id="Lh0-UO-GeD" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="f5t-89-ZgH"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ybZ-QU-Owx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5312.9770992366412" y="276.05633802816902"/>
+        </scene>
+        <!--NewTripDetail-->
+        <scene sceneID="w7c-nl-5MX">
+            <objects>
+                <viewControllerPlaceholder storyboardName="NewTripDetail" id="zcf-n1-1Gn" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="HbK-3r-Ob5"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iJO-5p-qgW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5321.3740458015263" y="119.01408450704226"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="vb5-ol-3sf">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lvc-Zm-DhD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3xO-uj-OwW" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" id="PpN-3n-67e"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="7bk-jj-n1t">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
@@ -103,7 +109,24 @@
                         <segue destination="2xc-26-hr6" kind="relationship" relationship="rootViewController" id="drC-TW-1NW"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lvc-Zm-DhD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3769" y="202"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="oey-PR-tqS">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8pt-S1-2aC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="zdA-Un-iMf" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3GG-cm-B1y">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="3xO-uj-OwW" kind="relationship" relationship="viewControllers" id="Cfz-R2-1IJ"/>
+                    </connections>
+                </tabBarController>
             </objects>
             <point key="canvasLocation" x="2841.9847328244273" y="202.11267605633805"/>
         </scene>

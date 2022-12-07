@@ -43,7 +43,7 @@
                                 <buttonConfiguration key="configuration" style="tinted" title="Add Parks"/>
                             </button>
                             <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="inline" translatesAutoresizingMaskIntoConstraints="NO" id="diN-3t-3ml">
-                                <rect key="frame" x="40" y="311" width="393" height="69"/>
+                                <rect key="frame" x="39" y="311" width="392" height="69"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             </datePicker>
                         </subviews>
@@ -51,6 +51,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="NEW TRIP" id="YPe-Os-c98">
+                        <barButtonItem key="backBarButtonItem" title="Trips" id="5Ta-lY-W6X"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="cancel" id="bWB-3i-6Ko"/>
                     </navigationItem>
                 </viewController>
@@ -61,6 +62,7 @@
         <!--Navigation Controller-->
         <scene sceneID="VQ6-7B-mWm">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mtK-z9-N3Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AfB-BB-4lW" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="I2B-sy-Uzi">
@@ -72,7 +74,6 @@
                         <segue destination="Km2-aC-nTy" kind="relationship" relationship="rootViewController" id="u8m-cE-yej"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mtK-z9-N3Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2733.5877862595421" y="672.53521126760563"/>
         </scene>

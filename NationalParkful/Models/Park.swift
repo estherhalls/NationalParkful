@@ -7,6 +7,7 @@
 
 import Foundation
 
+// Read-Only Data from NPS API
 struct TopLevelDictionary: Decodable {
     let data: [ParkData]
 }
