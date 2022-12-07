@@ -9,7 +9,6 @@
         <!--Navigation Controller-->
         <scene sceneID="g3h-6u-GaF">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Txm-Bg-PSm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController id="LHc-AZ-WiW" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="house.circle" catalog="system" id="2px-DC-ZXS"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ypl-LA-vrO">
@@ -20,13 +19,14 @@
                         <segue destination="Roz-GJ-TLf" kind="relationship" relationship="rootViewController" id="CMq-GE-JVN"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Txm-Bg-PSm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1482" y="-732"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="TCg-el-MLx">
             <objects>
-                <tabBarController id="7bn-eC-XNU" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tabBar" useStoryboardIdentifierAsRestorationIdentifier="YES" id="7bn-eC-XNU" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sGx-aE-od3">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

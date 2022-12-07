@@ -33,7 +33,7 @@
                                 <imageReference key="image" image="mountain.2.fill" catalog="system" symbolScale="large"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="airplane" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="WZG-CX-A0h">
-                                <rect key="frame" x="-20" y="450.66666666666669" width="151" height="73.666666666666629"/>
+                                <rect key="frame" x="-20" y="450.66666666666669" width="151" height="73.666666666666686"/>
                                 <color key="tintColor" red="0.89285765969999997" green="0.64066125100000004" blue="0.47305703970000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="WZG-CX-A0h" secondAttribute="height" multiplier="167:83" id="RCz-f8-Waq"/>

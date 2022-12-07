@@ -42,7 +42,7 @@ class IDResultsViewController: UIViewController {
         // Display the login controller
         let userStoryboard = UIStoryboard(name: "UserSettings", bundle: nil)
         let loginVC = userStoryboard.instantiateViewController(withIdentifier: "Login")
-        
+        loginVC.modalPresentationStyle = .fullScreen
         self.present(loginVC, animated: true, completion: nil)
         
     }

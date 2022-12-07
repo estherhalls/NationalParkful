@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sAt-cf-vxp">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8vm-Ed-uJi">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -62,7 +62,8 @@
                                                     <imageReference key="image" image="checkmark.square" catalog="system" symbolScale="medium"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="rememberMeButtonChecked:" destination="wLK-js-aDg" eventType="touchUpInside" id="79m-1p-Ahc"/>
+                                                    <action selector="loginButtonTapped:" destination="wLK-js-aDg" eventType="touchUpInside" id="RYX-vC-kjN"/>
+                                                    <action selector="rememberMeButtonChecked:" destination="wLK-js-aDg" eventType="touchUpInside" id="uVs-Yl-ZS3"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remember Me" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kav-L4-fDM">
@@ -110,7 +111,8 @@
                                             <fontDescription key="titleFontDescription" style="UICTFontTextStyleCaption1"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="forgotPWButtonTapped:" destination="wLK-js-aDg" eventType="touchUpInside" id="pts-cS-bke"/>
+                                            <action selector="forgotPWButtonTapped:" destination="wLK-js-aDg" eventType="touchUpInside" id="42g-LO-eua"/>
+                                            <action selector="loginButtonTapped:" destination="wLK-js-aDg" eventType="touchUpInside" id="6y5-1f-mCs"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -238,7 +240,7 @@
         <!--Navigation Controller-->
         <scene sceneID="NTY-bJ-1t5">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8vm-Ed-uJi" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="loginNavigation" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="8vm-Ed-uJi" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="z0J-kz-yH6">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>

@@ -30,7 +30,7 @@ class HomeViewController: UIViewController {
             // No user is signed in. Go to UserSettings (login)
             let storyboard = UIStoryboard(name: "UserSettings", bundle: nil)
             let loginVC = storyboard.instantiateViewController(withIdentifier: "Login")
-
+            
             self.present(loginVC, animated: true, completion: nil)
 
         }
