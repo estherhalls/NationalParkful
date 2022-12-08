@@ -117,7 +117,7 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="nLx-hP-yLj" customClass="ASAuthorizationAppleIDButton">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="nLx-hP-yLj">
                                 <rect key="frame" x="50" y="423.66666666666669" width="293" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="TXU-8g-1vl"/>
