@@ -10,6 +10,7 @@ import UIKit
 // Individual park information on this view
 
 class ParkDetailViewController: UIViewController {
+    // TODO: - Move NetworkController Functions Data Retrieval to View Model
     
     @IBOutlet weak var parkCityNameLabel: UILabel!
     @IBOutlet weak var parkNameLabel: UILabel!

@@ -10,14 +10,15 @@ import AuthenticationServices
 import FirebaseAuth
 
 class IDResultsViewController: UIViewController {
-    @IBOutlet weak var userIDLabel: UILabel!
-    @IBOutlet weak var firstNameLabel: UILabel!
-    @IBOutlet weak var lastNameLabel: UILabel!
+    // TODO: -
+
     @IBOutlet weak var emailLabel: UILabel!
     @IBOutlet weak var signOutButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        /// Show signed in user email
         currentUserData()
     }
     
@@ -25,15 +26,9 @@ class IDResultsViewController: UIViewController {
     func currentUserData() {
         let user = Auth.auth().currentUser
         if let user = user {
-            // The user's ID, unique to the Firebase project.
-            // Do NOT use this value to authenticate with your backend server,
-            // if you have one. Use getTokenWithCompletion:completion: instead.
-            
             let email = user.email
-            
             emailLabel.text = email
         }
-        
     }
     
     
@@ -41,9 +36,7 @@ class IDResultsViewController: UIViewController {
     @IBAction func signOutTapped(_ sender: Any) {
         
         // Clear the user interface.
-        userIDLabel.text = ""
-        firstNameLabel.text = ""
-        lastNameLabel.text = ""
+   
         emailLabel.text = ""
         
         // Logout

@@ -240,7 +240,7 @@
         <!--Navigation Controller-->
         <scene sceneID="NTY-bJ-1t5">
             <objects>
-                <navigationController storyboardIdentifier="loginNavigation" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="8vm-Ed-uJi" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="loginNav" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="8vm-Ed-uJi" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="z0J-kz-yH6">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
@@ -264,44 +264,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="hNh-Vn-nJ8">
-                                <rect key="frame" x="30" y="119" width="333" height="157"/>
+                                <rect key="frame" x="30" y="163" width="333" height="42.333333333333343"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="qQe-ZZ-9AD">
-                                        <rect key="frame" x="0.0" y="0.0" width="303" height="42.333333333333336"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DUt-16-qg0">
-                                                <rect key="frame" x="0.0" y="0.0" width="303" height="20.333333333333332"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(First Name Label)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ZP-b1-U54">
-                                                <rect key="frame" x="0.0" y="25.333333333333343" width="303" height="17"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="pdH-FY-Cna">
-                                        <rect key="frame" x="0.0" y="57.333333333333343" width="303" height="42.333333333333343"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="31f-KO-AEj">
-                                                <rect key="frame" x="0.0" y="0.0" width="303" height="20.333333333333332"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Last Name Label)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NQw-XN-Nc9">
-                                                <rect key="frame" x="0.0" y="25.333333333333314" width="303" height="17"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="vgV-fO-lDr">
-                                        <rect key="frame" x="0.0" y="114.66666666666664" width="303" height="42.333333333333329"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="303" height="42.333333333333336"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Fv-ea-HME">
                                                 <rect key="frame" x="0.0" y="0.0" width="303" height="20.333333333333332"/>
@@ -319,16 +285,11 @@
                                     </stackView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="qQe-ZZ-9AD" secondAttribute="trailing" constant="30" id="BuH-G7-2CA"/>
-                                    <constraint firstItem="vgV-fO-lDr" firstAttribute="leading" secondItem="hNh-Vn-nJ8" secondAttribute="leading" constant="30" id="TFc-Uj-b4b"/>
                                     <constraint firstAttribute="trailing" secondItem="vgV-fO-lDr" secondAttribute="trailing" constant="30" id="XMB-de-uIN"/>
-                                    <constraint firstAttribute="trailing" secondItem="pdH-FY-Cna" secondAttribute="trailing" constant="30" id="hMK-2d-csn"/>
-                                    <constraint firstItem="qQe-ZZ-9AD" firstAttribute="leading" secondItem="hNh-Vn-nJ8" secondAttribute="leading" constant="30" id="hpu-1d-qkx"/>
-                                    <constraint firstItem="pdH-FY-Cna" firstAttribute="leading" secondItem="hNh-Vn-nJ8" secondAttribute="leading" constant="30" id="w67-6c-dai"/>
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kd1-gA-i18">
-                                <rect key="frame" x="159" y="351" width="75" height="28.333333333333314"/>
+                                <rect key="frame" x="159" y="280.33333333333331" width="75" height="28.333333333333314"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="75" id="3nR-BK-5oh"/>
                                 </constraints>
@@ -354,16 +315,33 @@
                             <constraint firstItem="hNh-Vn-nJ8" firstAttribute="top" secondItem="qbu-lc-4St" secondAttribute="top" constant="60" id="zD6-Ki-SxR"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="USER SETTINGS" id="rEt-F1-8wI"/>
                     <connections>
                         <outlet property="emailLabel" destination="Oc6-iP-Pxq" id="ska-Gk-oVk"/>
-                        <outlet property="firstNameLabel" destination="4ZP-b1-U54" id="7jR-w5-1pz"/>
-                        <outlet property="lastNameLabel" destination="NQw-XN-Nc9" id="Pg4-fe-3ti"/>
                         <outlet property="signOutButton" destination="kd1-gA-i18" id="4Fs-HN-48L"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w72-Ik-IyJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5459" y="1403"/>
+            <point key="canvasLocation" x="6385.4961832061063" y="1402.8169014084508"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="3gS-gh-xSk">
+            <objects>
+                <navigationController storyboardIdentifier="idResultsNav" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="zeI-uY-xzS" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bUz-lc-wDw">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="sAt-cf-vxp" kind="relationship" relationship="rootViewController" id="5ZR-s5-dub"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uWP-fL-ynO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5458.7786259541981" y="1402.8169014084508"/>
         </scene>
     </scenes>
     <resources>

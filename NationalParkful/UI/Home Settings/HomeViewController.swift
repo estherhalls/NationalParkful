@@ -20,16 +20,16 @@ class HomeViewController: UIViewController {
     
         // Check if any user is signed in
         if Auth.auth().currentUser != nil {
-            // User is signed in. Go to IDResults View
+            /// User is signed in. Go to IDResults View (using nav controller ID rather than view controller id so that title shows)
             let storyboard = UIStoryboard(name: "UserSettings", bundle: nil)
-            let idResultsVC = storyboard.instantiateViewController(withIdentifier: "IDResults")
+            let idResultsVC = storyboard.instantiateViewController(withIdentifier: "idResultsNav")
 
             self.present(idResultsVC, animated: true, completion: nil)
 
         } else {
-            // No user is signed in. Go to UserSettings (login)
+            /// No user is signed in. Go to UserSettings (login - using nav controller ID rather than view controller id so that title shows)
             let storyboard = UIStoryboard(name: "UserSettings", bundle: nil)
-            let loginVC = storyboard.instantiateViewController(withIdentifier: "Login")
+            let loginVC = storyboard.instantiateViewController(withIdentifier: "loginNav")
             
             self.present(loginVC, animated: true, completion: nil)
 

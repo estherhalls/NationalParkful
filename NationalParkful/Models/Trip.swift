@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+// Trip named by user, with start and end date and parks added
 class Trip: Decodable {
     
     // MARK: - Properties

@@ -19,11 +19,13 @@ class UserSettingsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        /// Show programmatic sign in with apple button
         setupProviderLoginView()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        /// Prompt user to sign in with Apple with a popup over screen so they are more likely to use this method
         performExistingAccountSetupFlows()
     }
     
@@ -40,6 +42,7 @@ class UserSettingsViewController: UIViewController {
                                           style: .default,
                                           handler: { _ in
             DispatchQueue.main.async {
+                /// Segue already exists, so perform that instead of present function or changing root vc
                 self.performSegue(withIdentifier: "toCreateAccountVC", sender: nil)
             }
         })
@@ -65,7 +68,7 @@ class UserSettingsViewController: UIViewController {
             print ("Missing Text Field Data!")
             return
         }
-        // Sign In Firebase User
+        // Sign In Firebase Email User
         FirebaseAuth.Auth.auth().signIn(withEmail: email, password: password) { [weak self] authResult, error in
             guard let strongSelf = self else {return}
             guard error == nil else {
@@ -82,6 +85,7 @@ class UserSettingsViewController: UIViewController {
             
             /// This is to get the SceneDelegate object from your view controller
             /// then call the change root view controller function to change to main tab bar
+            /// Use this rather than PresentVC function to clear memory and show home as root controller instead of card on top
             (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(homeVC)
         }
     }
@@ -127,7 +131,6 @@ class UserSettingsViewController: UIViewController {
         authorizationController.performRequests()
     }
     
-    
 } // End of Class
 
 extension UserSettingsViewController: ASAuthorizationControllerPresentationContextProviding {
@@ -143,50 +146,60 @@ extension UserSettingsViewController: ASAuthorizationControllerDelegate {
         if let appleIDCredential = authorization.credential as? ASAuthorizationAppleIDCredential {
             
             // Create an account in your system.
+            /// Save authorised user ID for future reference
             let userIdentifier = appleIDCredential.user
-            let familyName = appleIDCredential.fullName?.familyName
-            let givenName = appleIDCredential.fullName?.givenName
-            let email = appleIDCredential.email
-            
             UserDefaults.standard.set(userIdentifier, forKey: "uid")
-            UserDefaults.standard.set(email, forKey: "email")
-            UserDefaults.standard.set(givenName, forKey: "firstName")
-            UserDefaults.standard.set(familyName, forKey: "lastName")
             
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let homeVC = storyboard.instantiateViewController(withIdentifier: "tabBar")
             
-            /// This is to get the SceneDelegate object from your view controller
-            /// then call the change root view controller function to change to main tab bar
-            (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(homeVC)
-            
+            /// Retrieve the secure nonce generated during Apple sign in
             guard let nonce = currentNonce else {
                 fatalError("Invalid state: A login callback was received, but no login request was sent.")
             }
+            /// Retrieve Apple identity token
             guard let appleIDToken = appleIDCredential.identityToken else {
                 print("Unable to fetch identity token")
                 return
             }
+            /// Convert Apple identity token to string
             guard let idTokenString = String(data: appleIDToken, encoding: .utf8) else {
                 print("Unable to serialize token string from data: \(appleIDToken.debugDescription)")
                 return
             }
             
-            // Initialize a Firebase credential.
-            let credential = OAuthProvider.credential(withProviderID: "apple.com",
-                                                      idToken: idTokenString,
-                                                      rawNonce: nonce)
-            // Sign in with Firebase.
-            Auth.auth().signIn(with: credential) { (authResult, error) in
+            /// Initialize a Firebase credential using secure nonce and Apple identity token
+            let firebaseCredential = OAuthProvider.credential(withProviderID: "apple.com",
+                                                              idToken: idTokenString,
+                                                              rawNonce: nonce)
+            // Sign in Apple with Firebase.
+            Auth.auth().signIn(with: firebaseCredential) { (authResult, error) in
                 if (error != nil) {
-                    // Error. If error.code == .MissingOrInvalidNonce, make sure
-                    // you're sending the SHA256-hashed nonce as a hex string with
-                    // your request to Apple.
+                    /// Error. If error.code == .MissingOrInvalidNonce, make sure
+                    /// you're sending the SHA256-hashed nonce as a hex string with
+                    /// your request to Apple.
                     print(error?.localizedDescription as Any)
                     return
                 }
-                // User is signed in to Firebase with Apple.
-                // ...
+                // TODO: - fix fatal error: found nil
+                // This allows firebase to store first name from Apple as display name. Worked first time, but I think I'm getting errors because this runs every time?
+                /// User is signed in to Firebase with Apple.
+                /// Make a request to set user's display name on Firebase
+                //                                let changeRequest = authResult?.user.createProfileChangeRequest()
+                //                                changeRequest?.displayName = appleIDCredential.fullName?.givenName
+                //                                changeRequest?.commitChanges(completion: { (error) in
+                //
+                //                                    if let error {
+                //                                        print(error.localizedDescription)
+                //                                    } else {
+                //                                        print("Updated display name: \(Auth.auth().currentUser!.displayName!)")
+                //                                    }
+                //                                })
+                
+                // Navigate back to Home after Logged in
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                let homeVC = storyboard.instantiateViewController(withIdentifier: "tabBar")
+                /// This is to get the SceneDelegate object from your view controller
+                /// then call the change root view controller function to change to main tab bar
+                (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(homeVC)
             }
         }
     }

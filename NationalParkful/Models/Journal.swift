@@ -7,7 +7,7 @@
 
 //import Foundation
 //
-//class ParkJournal: Decodable {
+class ParkJournal: Decodable {
 //    /// Park (isFavorite refers to park, not visit instance of the park)
 //    var isFavorite: Bool
 //    var journalEntry: String
@@ -31,7 +31,7 @@
 //        self.parkShortName = parkShortName
 //        self.parkImage = parkImage
 //    }
-//} // End of Class
+} // End of Class
 
 // MARK: - Optional (Failable) Initializer Extension
 ///Allows us to use .compactMap for-in loop on FirebaseService
