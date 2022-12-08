@@ -27,22 +27,17 @@ protocol FirebaseSyncable {
 class FirebaseService: FirebaseSyncable {
     let ref = Firestore.firestore()
     
-    // MARK: - User data to and from Firebase
+    // MARK: - User Collection: user data to and from Firebase
     
     //    func saveUser(_ appUser: AppUser) {
     /// UUID is what makes each entry unique. userData is what I named the unique dictionary representation of model object on AppUser model file.
     //        ref.collection(AppUser.Key.collectionType).document(appUser.uuid).setData(appUser.userData)
     //    }
     
-    
-    
-    // MARK: - FIREBASE USER
-    // SIGN UP
-    // SIGN IN
-    // LOG OUT
-    
 
     // MARK: - SIGN IN WITH APPLE
+    /// I created an account with my email on December 6th and then signed in with my apple id associated with the same email December 7th. Firebase says that the account was created December 6th, but now says that the login provider is Apple. I believe the User UID did not change between them.
+    
     /// For every sign-in request, generate a random string—a "nonce"—which you will use to make sure the ID token you get was granted specifically in response to your app's authentication request. This step is important to prevent replay attacks.
      static func randomNonceString(length: Int = 32) -> String {
         precondition(length > 0)

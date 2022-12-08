@@ -33,17 +33,22 @@ class CreateAccountViewController: UIViewController {
                 print("Account Creation Failed.")
                 return
             }
+            guard let user = authResult?.user else {return}
+            UserDefaults.standard.set(user.uid, forKey: "uid")
+            UserDefaults.standard.set(user.email, forKey: "email")
+            
             /// When user creates account, it also logs them in.
             print("You have signed in!")
             strongSelf.usernameTextField.placeholder = ""
             strongSelf.passwordTextField.placeholder = ""
             
-            /// Set as signed in
+            /// Set as signed in with Firebase
             UserDefaults.standard.set(true, forKey: "signedInWithFirebase")
             
             /// Display the home view via tab bar controller
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let homeVC = storyboard.instantiateViewController(withIdentifier: "tabBar")
+            
             /// This is to get the SceneDelegate object from your view controller
                /// then call the change root view controller function to change to main tab bar
                (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(homeVC)

@@ -23,6 +23,10 @@ class ParkDetailViewController: UIViewController {
     var activities: [ActivitiesList] = []
     
     // MARK: - Lifecycle
+    override func viewWillAppear(_ animated: Bool) {
+      
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         parkActivitiesTableView.dataSource = self
