@@ -9,6 +9,7 @@ import Foundation
 import FirebaseFirestore
 import FirebaseAuth
 import CryptoKit
+import AuthenticationServices
 
 /// May be it's own file if you want it more abstracted. Make sure this is outside of FirebaseService
 enum FirebaseError: Error {
@@ -23,27 +24,25 @@ protocol FirebaseSyncable {
 }
 
 
-struct FirebaseService: FirebaseSyncable {
+class FirebaseService: FirebaseSyncable {
     let ref = Firestore.firestore()
     
-    // MARK: - User data to and from Firebase
+    // MARK: - User Collection: user data to and from Firebase
     
     //    func saveUser(_ appUser: AppUser) {
     /// UUID is what makes each entry unique. userData is what I named the unique dictionary representation of model object on AppUser model file.
     //        ref.collection(AppUser.Key.collectionType).document(appUser.uuid).setData(appUser.userData)
     //    }
     
-    
-    // MARK: - FIREBASE USER
-    // SIGN UP
-    // SIGN IN
-    // LOG OUT
-    
+
     // MARK: - SIGN IN WITH APPLE
-    private func randomNonceString(length: Int = 32) -> String {
+    /// I created an account with my email on December 6th and then signed in with my apple id associated with the same email December 7th. Firebase says that the account was created December 6th, but now says that the login provider is Apple. I believe the User UID did not change between them.
+    
+    /// For every sign-in request, generate a random string—a "nonce"—which you will use to make sure the ID token you get was granted specifically in response to your app's authentication request. This step is important to prevent replay attacks.
+     static func randomNonceString(length: Int = 32) -> String {
         precondition(length > 0)
         let charset: Array<Character> =
-            Array("0123456789ABCDEFGHIJKLMNOPQRSTUVXYZabcdefghijklmnopqrstuvwxyz-._")
+        Array("0123456789ABCDEFGHIJKLMNOPQRSTUVXYZabcdefghijklmnopqrstuvwxyz-._")
         var result = ""
         var remainingLength = length
         
@@ -71,8 +70,9 @@ struct FirebaseService: FirebaseSyncable {
         
         return result
     }
-
-    private func sha256(_ input: String) -> String {
+    
+    /// You will send the SHA256 hash of the nonce with your sign-in request, which Apple will pass unchanged in the response. Firebase validates the response by hashing the original nonce and comparing it to the value passed by Apple.
+    static func sha256(_ input: String) -> String {
         let inputData = Data(input.utf8)
         let hashedData = SHA256.hash(data: inputData)
         let hashString = hashedData.compactMap {
@@ -81,5 +81,7 @@ struct FirebaseService: FirebaseSyncable {
         
         return hashString
     }
-    
-} // End of Struct
+} // End of Class
+
+
+
