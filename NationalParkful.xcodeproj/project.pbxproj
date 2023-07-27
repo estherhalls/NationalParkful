@@ -239,9 +239,9 @@
 				EBAEDFB12925D28D00E9B460 /* Main.storyboard */,
 				EBE9D45229394EF4004A8EDE /* HomeViewController.swift */,
 				EBE9D45029394EE1004A8EDE /* UserSettingsViewController.swift */,
+				EB5033722942A15B00F01E8F /* UserSettingsViewModel.swift */,
 				EB4CDE04293E6DA900B4D095 /* CreateAccountViewController.swift */,
 				EB4CDE06293E7C3600B4D095 /* IDResultsViewController.swift */,
-				EB5033722942A15B00F01E8F /* UserSettingsViewModel.swift */,
 			);
 			path = "Home Settings";
 			sourceTree = "<group>";

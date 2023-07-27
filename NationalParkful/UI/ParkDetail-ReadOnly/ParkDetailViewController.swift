@@ -73,7 +73,7 @@ class ParkDetailViewController: UIViewController {
                     self?.parkStateLabel.text = address.stateCode
                     self?.parkCoordinatesLabel.text = park.coordinates
                     self?.parkDescriptionTextView.text = park.description
-                    self?.entranceFeeLabel.text = self?.cost
+                    self?.entranceFeeLabel.text = self?.cost ?? ""
                     self?.parkFirstImage.image = image
                     self?.activities = park.activities
             
