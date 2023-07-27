@@ -11,28 +11,41 @@ import FirebaseAuth
 import CryptoKit
 import AuthenticationServices
 
-/// May be it's own file if you want it more abstracted. Make sure this is outside of FirebaseService
-enum FirebaseError: Error {
-    case firebaseError(Error)
-    case failedToUnwrapData
-    case noDataFound
-} // End of Enum
 
 /// Makes data SOLID rather than a concrete type - Dependency Inversion
 protocol FirebaseSyncable {
     /// underscore in save function is an empty argument label because log is also in our parameters
+    /// Will need to be called in sign in with apple, and also in email sign in and sign up
+    func saveUser(_ user: AppUser)
 }
-
 
 class FirebaseService: FirebaseSyncable {
     let ref = Firestore.firestore()
     
     // MARK: - User Collection: user data to and from Firebase
     
-    //    func saveUser(_ appUser: AppUser) {
+        func saveUser(_ appUser: AppUser) {
     /// UUID is what makes each entry unique. userData is what I named the unique dictionary representation of model object on AppUser model file.
-    //        ref.collection(AppUser.Key.collectionType).document(appUser.uuid).setData(appUser.userData)
-    //    }
+            ref.collection(AppUser.Key.collectionType).document(appUser.firebaseUID).setData(appUser.userData)
+        }
+//    func loadUser(completion: @escaping (Result<AppUser, FirebaseError>) -> Void) {
+//        ref.collection(AppUser.Key.collectionType).getDocuments { snapshot, error in
+//            if let error {
+//                print(error.localizedDescription)
+//                completion(.failure(.firebaseError(error)))
+//                return
+//            }
+//            guard let data = snapshot?.documents else {
+//                completion(.failure(.failedToUnwrapData))
+//                return
+//            }
+//            /// Go back to model and create failable initializer so we can use .compactMap
+//            let dataArray = data.compactMap({$0.data()})
+//            let users = dataArray.compactMap({AppUser(fromDictionary: $0)})
+//            let sortedLogs = logs.sorted(by: {$0.userDate > $1.userDate})
+//            completion(.success(users))
+//        }
+//    }
     
 
     // MARK: - SIGN IN WITH APPLE
@@ -83,5 +96,11 @@ class FirebaseService: FirebaseSyncable {
     }
 } // End of Class
 
+/// May be it's own file if you want it more abstracted. Make sure this is outside of FirebaseService
+enum FirebaseError: Error {
+    case firebaseError(Error)
+    case failedToUnwrapData
+    case noDataFound
+} // End of Enum
 
 

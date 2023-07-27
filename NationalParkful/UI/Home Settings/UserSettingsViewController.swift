@@ -17,6 +17,11 @@ class UserSettingsViewController: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
+    // MARK: - Properties
+    /// MUST be initialized
+    var viewModel: UserSettingsViewModel!
+    
+    // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         /// Show programmatic sign in with apple button
@@ -78,16 +83,18 @@ class UserSettingsViewController: UIViewController {
             print ("You have signed in!")
             strongSelf.emailTextField.placeholder = ""
             strongSelf.passwordTextField.placeholder = ""
-            
-            /// Display the home view via tab bar controller
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let homeVC = storyboard.instantiateViewController(withIdentifier: "tabBar")
-            
-            /// This is to get the SceneDelegate object from your view controller
-            /// then call the change root view controller function to change to main tab bar
-            /// Use this rather than PresentVC function to clear memory and show home as root controller instead of card on top
-            (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(homeVC)
         }
+        // Saving AppUser to Firebase Collection
+//        self.viewModel.saveUser(email: email)
+        
+        /// Display the home view via tab bar controller
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let homeVC = storyboard.instantiateViewController(withIdentifier: "tabBar")
+        
+        /// This is to get the SceneDelegate object from your view controller
+        /// then call the change root view controller function to change to main tab bar
+        /// Use this rather than PresentVC function to clear memory and show home as root controller instead of card on top
+        (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(homeVC)
     }
     
     // MARK: - Login With Apple
@@ -148,8 +155,12 @@ extension UserSettingsViewController: ASAuthorizationControllerDelegate {
             // Create an account in your system.
             /// Save authorised user ID for future reference
             let userIdentifier = appleIDCredential.user
+            let email = appleIDCredential.email
             UserDefaults.standard.set(userIdentifier, forKey: "uid")
+            UserDefaults.standard.set(email, forKey: "email")
             
+            // Saving AppUser to Firebase Collection
+            //            viewModel.saveUser(email: email ?? "", firebaseUID: userIdentifier)
             
             /// Retrieve the secure nonce generated during Apple sign in
             guard let nonce = currentNonce else {
@@ -193,6 +204,7 @@ extension UserSettingsViewController: ASAuthorizationControllerDelegate {
                 //                                        print("Updated display name: \(Auth.auth().currentUser!.displayName!)")
                 //                                    }
                 //                                })
+                
                 
                 // Navigate back to Home after Logged in
                 let storyboard = UIStoryboard(name: "Main", bundle: nil)

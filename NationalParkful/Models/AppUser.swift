@@ -8,38 +8,30 @@
 import Foundation
 // TODO: - create collections(users).documents(UID)
 // App User > trips[0].parks[0].journal
-struct AppUser: Decodable {
+class AppUser: Decodable {
     enum Key {
         static let collectionType = "users"
-        static let name = "name"
         static let email = "email"
-        static let password = "password"
-        static let uuid = "uuid"
+        static let firebaseUID = "UID"
     }
     
     // Properties
-    var name: String
     var email: String
-    var password: String
     /// Needs to be Firebase UID that is assigned to each user
-    let uuid: UUID
+    let firebaseUID: String
     
     // Dictionary Representation of Model Objects
     /// Used as value for child dictionary in save trip function on FirebaseService file. Computed property because it has a body that will be assigned the value.
     var userData: [String:AnyHashable] {
-        [Key.name : self.name,
-         Key.email : self.email,
-         Key.password : self.password,
-         Key.uuid: self.uuid
+        [Key.email : self.email,
+         Key.firebaseUID: self.firebaseUID
         ]
     }
     // MARK: - Designated Initializer
-    init(name: String, email: String, password: String, uuid: UUID) {
-        self.name = name
+    init(email: String, firebaseUID: String = UUID().uuidString) {
         self.email = email
-        self.password = password
-        self.uuid = uuid
+        self.firebaseUID = firebaseUID
     }
-} // End of Struct
+} // End of Class
 
 

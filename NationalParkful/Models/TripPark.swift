@@ -39,7 +39,7 @@ extension TripPark {
     convenience init?(fromDictionary topLevelDictionary: [String:Any]) {
         guard let uuid = topLevelDictionary[Key.parkUUID] as? String,
               let isFavorite = topLevelDictionary[Key.isFavorite] as? Bool
-        else {return}
+        else {return nil}
         self.init(parkUUID: uuid, isFavorite: isFavorite)
     }
 }

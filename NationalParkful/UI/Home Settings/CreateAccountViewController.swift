@@ -24,6 +24,7 @@ class CreateAccountViewController: UIViewController {
         guard let email = usernameTextField.text, !email.isEmpty,
               let password = passwordTextField.text, !password.isEmpty else {
             print ("Missing Text Field Data!")
+            // add a notification to user that the text field must be populated with their data
             return
         }
         // Create New Account
@@ -33,11 +34,11 @@ class CreateAccountViewController: UIViewController {
                 print("Account Creation Failed.")
                 return
             }
+            /// When user creates account, it also logs them in.
             guard let user = authResult?.user else {return}
             UserDefaults.standard.set(user.uid, forKey: "uid")
             UserDefaults.standard.set(user.email, forKey: "email")
             
-            /// When user creates account, it also logs them in.
             print("You have signed in!")
             strongSelf.usernameTextField.placeholder = ""
             strongSelf.passwordTextField.placeholder = ""

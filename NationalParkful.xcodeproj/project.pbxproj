@@ -41,6 +41,7 @@
 		EB4CDE0B293E93BE00B4D095 /* Journal.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4CDE0A293E93BE00B4D095 /* Journal.swift */; };
 		EB4CDE0D293EA1AA00B4D095 /* TripPark.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4CDE0C293EA1AA00B4D095 /* TripPark.swift */; };
 		EB4CDE0F293EABF300B4D095 /* AppUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4CDE0E293EABF300B4D095 /* AppUser.swift */; };
+		EB5033732942A15B00F01E8F /* UserSettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5033722942A15B00F01E8F /* UserSettingsViewModel.swift */; };
 		EBAEDFAC2925D28D00E9B460 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAEDFAB2925D28D00E9B460 /* AppDelegate.swift */; };
 		EBAEDFAE2925D28D00E9B460 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAEDFAD2925D28D00E9B460 /* SceneDelegate.swift */; };
 		EBAEDFB32925D28D00E9B460 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBAEDFB12925D28D00E9B460 /* Main.storyboard */; };
@@ -83,6 +84,7 @@
 		EB4CDE0A293E93BE00B4D095 /* Journal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Journal.swift; sourceTree = "<group>"; };
 		EB4CDE0C293EA1AA00B4D095 /* TripPark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripPark.swift; sourceTree = "<group>"; };
 		EB4CDE0E293EABF300B4D095 /* AppUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUser.swift; sourceTree = "<group>"; };
+		EB5033722942A15B00F01E8F /* UserSettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettingsViewModel.swift; sourceTree = "<group>"; };
 		EB6EC5B1293FD4CB00576A5E /* NationalParkful.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NationalParkful.entitlements; sourceTree = "<group>"; };
 		EBAEDFA82925D28D00E9B460 /* NationalParkful.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NationalParkful.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBAEDFAB2925D28D00E9B460 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -239,6 +241,7 @@
 				EBE9D45029394EE1004A8EDE /* UserSettingsViewController.swift */,
 				EB4CDE04293E6DA900B4D095 /* CreateAccountViewController.swift */,
 				EB4CDE06293E7C3600B4D095 /* IDResultsViewController.swift */,
+				EB5033722942A15B00F01E8F /* UserSettingsViewModel.swift */,
 			);
 			path = "Home Settings";
 			sourceTree = "<group>";
@@ -390,6 +393,7 @@
 				EB4CDE09293E8C2F00B4D095 /* Trip.swift in Sources */,
 				EBE9D44A29393834004A8EDE /* NPSNetworkController.swift in Sources */,
 				EB08EF9329389C710081D122 /* NetworkError.swift in Sources */,
+				EB5033732942A15B00F01E8F /* UserSettingsViewModel.swift in Sources */,
 				EB4CDE07293E7C3600B4D095 /* IDResultsViewController.swift in Sources */,
 				EB4CDE05293E6DA900B4D095 /* CreateAccountViewController.swift in Sources */,
 				EB08EF7429388EFC0081D122 /* NewTripViewModel.swift in Sources */,
