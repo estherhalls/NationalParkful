@@ -45,14 +45,17 @@ class ParkDetailViewController: UIViewController {
  
     
     // MARK: - Helper Functions
-    
     func hasCost() {
-        guard let park = parkData else {return}
-        let fees = park.entranceFees[0]
-        if fees.cost == "0.00" {
-            cost = "Free"
+        guard let park = parkData else { return }
+        if let fees = park.entranceFees.first {
+            
+            if fees.cost == "0.00" {
+                cost = "Free"
+            } else {
+                cost = "$\(String(describing: fees.cost))"
+            }
         } else {
-            cost = "$\(fees.cost)"
+            cost = "Not Available"
         }
     }
     
