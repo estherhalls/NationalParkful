@@ -42,6 +42,7 @@
 		EB4CDE0D293EA1AA00B4D095 /* TripPark.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4CDE0C293EA1AA00B4D095 /* TripPark.swift */; };
 		EB4CDE0F293EABF300B4D095 /* AppUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4CDE0E293EABF300B4D095 /* AppUser.swift */; };
 		EB5033732942A15B00F01E8F /* UserSettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5033722942A15B00F01E8F /* UserSettingsViewModel.swift */; };
+		EB8E479E2A79FAE300384B9E /* AllParksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8E479D2A79FAE300384B9E /* AllParksViewModel.swift */; };
 		EB9F3B0C2A79D66D00560871 /* AllParksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9F3B0B2A79D66D00560871 /* AllParksViewController.swift */; };
 		EB9F3B102A79D6BC00560871 /* AllParks.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB9F3B0E2A79D6BC00560871 /* AllParks.storyboard */; };
 		EBAEDFAC2925D28D00E9B460 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAEDFAB2925D28D00E9B460 /* AppDelegate.swift */; };
@@ -88,6 +89,7 @@
 		EB4CDE0E293EABF300B4D095 /* AppUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUser.swift; sourceTree = "<group>"; };
 		EB5033722942A15B00F01E8F /* UserSettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettingsViewModel.swift; sourceTree = "<group>"; };
 		EB6EC5B1293FD4CB00576A5E /* NationalParkful.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NationalParkful.entitlements; sourceTree = "<group>"; };
+		EB8E479D2A79FAE300384B9E /* AllParksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllParksViewModel.swift; sourceTree = "<group>"; };
 		EB9F3B0B2A79D66D00560871 /* AllParksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllParksViewController.swift; sourceTree = "<group>"; };
 		EB9F3B0F2A79D6BC00560871 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "NationalParkful/UI/Home Settings/Base.lproj/AllParks.storyboard"; sourceTree = "<group>"; };
 		EBAEDFA82925D28D00E9B460 /* NationalParkful.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NationalParkful.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -256,6 +258,7 @@
 			children = (
 				EB9F3B0E2A79D6BC00560871 /* AllParks.storyboard */,
 				EB9F3B0B2A79D66D00560871 /* AllParksViewController.swift */,
+				EB8E479D2A79FAE300384B9E /* AllParksViewModel.swift */,
 			);
 			path = "All Parks";
 			sourceTree = "<group>";
@@ -404,6 +407,7 @@
 				EB08EF9129389A760081D122 /* FirebaseService.swift in Sources */,
 				EB08EF7A29388FA10081D122 /* AllTripsListTableViewController.swift in Sources */,
 				EB08EF7229388E620081D122 /* ParkDetailViewController.swift in Sources */,
+				EB8E479E2A79FAE300384B9E /* AllParksViewModel.swift in Sources */,
 				EB08EF6E29388E270081D122 /* ParkListViewModel.swift in Sources */,
 				EBAEDFAC2925D28D00E9B460 /* AppDelegate.swift in Sources */,
 				EB4CDE09293E8C2F00B4D095 /* Trip.swift in Sources */,
