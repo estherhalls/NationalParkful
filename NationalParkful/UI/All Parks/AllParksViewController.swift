@@ -8,17 +8,19 @@
 import UIKit
 import MapKit
 
-class AllParksViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UIScrollViewDelegate {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
-    }
-    
+class AllParksViewController: UIViewController {
+//    , UITableViewDelegate, UITableViewDataSource, UIScrollViewDelegate
+//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        <#code#>
+//    }
+//
+//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        <#code#>
+//    }
+//
+//
+//
 
-    
     private let map: MKMapView = {
         let map = MKMapView()
         return map
@@ -30,6 +32,10 @@ class AllParksViewController: UIViewController, UITableViewDelegate, UITableView
         // Map
         view.insertSubview(map, at: 0)
 
+    }
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        map.frame = view.bounds
     }
     
 
