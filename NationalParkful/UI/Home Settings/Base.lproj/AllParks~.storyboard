@@ -3,6 +3,8 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -87,7 +89,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="0Cl-Jj-VbD" kind="relationship" relationship="rootViewController" id="FHQ-ZV-vcd"/>
+                        <segue destination="Ohx-QD-l7q" kind="relationship" relationship="rootViewController" id="gJB-DL-5Hd"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nuo-w9-U7M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -103,16 +105,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QhW-Bf-lOQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3381" y="-108"/>
-        </scene>
-        <!--AllParks-->
-        <scene sceneID="TLh-4L-Ida">
-            <objects>
-                <viewControllerPlaceholder storyboardName="AllParks" id="0Cl-Jj-VbD" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="RxI-dk-Uih"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="aS4-Ne-4cs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4014" y="-328"/>
         </scene>
         <!--TripParkList-->
         <scene sceneID="g9f-jZ-Eau">
@@ -134,6 +126,16 @@
             </objects>
             <point key="canvasLocation" x="2947" y="-195"/>
         </scene>
+        <!--ExploreMap-->
+        <scene sceneID="IEB-RC-urE">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ExploreMap" id="Ohx-QD-l7q" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="wWr-Ps-981"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6GD-YV-Hqi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4014" y="-291"/>
+        </scene>
         <!--ParkDetail-->
         <scene sceneID="sEJ-Fb-I20">
             <objects>
@@ -143,6 +145,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jgK-tb-3iy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2317" y="-195"/>
+        </scene>
+        <!--AllParks-->
+        <scene sceneID="cke-wY-HK0">
+            <objects>
+                <viewController storyboardIdentifier="allParksVC" title="AllParks" id="TeU-Wn-JES" customClass="AllParksViewController" customModule="NationalParkful" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4MJ-jn-QWc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="0qB-v3-1bu"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0UG-UK-Jha" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4015" y="96"/>
         </scene>
         <!--ParkList-->
         <scene sceneID="nnb-mL-bM8">
@@ -190,5 +207,8 @@
         <image name="globe.americas.fill" catalog="system" width="128" height="123"/>
         <image name="house.circle" catalog="system" width="128" height="123"/>
         <image name="mountain.2.circle" catalog="system" width="128" height="123"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
